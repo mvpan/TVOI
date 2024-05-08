@@ -1,0 +1,96 @@
+{
+  "resolvedId": "C:/Users/Local/Desktop/TVOI/TVOI_STIL6/node_modules/axios/lib/helpers/spread.js",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "'use strict';\n\n/**\n * Syntactic sugar for invoking a function and expanding an array for arguments.\n *\n * Common use case would be to use `Function.prototype.apply`.\n *\n *  ```js\n *  function f(x, y, z) {}\n *  var args = [1, 2, 3];\n *  f.apply(null, args);\n *  ```\n *\n * With `spread` this example can be re-written.\n *\n *  ```js\n *  spread(function(x, y, z) {})([1, 2, 3]);\n *  ```\n *\n * @param {Function} callback\n *\n * @returns {Function}\n */\nexport default function spread(callback) {\n  return function wrap(arr) {\n    return callback.apply(null, arr);\n  };\n}\n",
+      "start": 1715171819744,
+      "end": 1715171819763,
+      "sourcemaps": null
+    },
+    {
+      "name": "vite:css",
+      "start": 1715171819763,
+      "end": 1715171819763,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1715171819763,
+      "end": 1715171819763,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1715171819763,
+      "end": 1715171819763,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1715171819763,
+      "end": 1715171819763,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1715171819763,
+      "end": 1715171819763,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1715171819763,
+      "end": 1715171819763,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1715171819763,
+      "end": 1715171819763,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1715171819763,
+      "end": 1715171819763,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1715171819763,
+      "end": 1715171819763,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1715171819763,
+      "end": 1715171819763,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1715171819763,
+      "end": 1715171819763,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1715171819763,
+      "end": 1715171819763,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1715171819763,
+      "end": 1715171819763,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1715171819763,
+      "end": 1715171819763,
+      "order": "normal"
+    }
+  ]
+}

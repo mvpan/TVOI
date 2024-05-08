@@ -1,0 +1,96 @@
+{
+  "resolvedId": "C:/Users/Local/Desktop/TVOI/TVOI_STIL6/node_modules/axios/lib/platform/browser/index.js",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "import URLSearchParams from './classes/URLSearchParams.js'\nimport FormData from './classes/FormData.js'\nimport Blob from './classes/Blob.js'\n\nexport default {\n  isBrowser: true,\n  classes: {\n    URLSearchParams,\n    FormData,\n    Blob\n  },\n  protocols: ['http', 'https', 'file', 'blob', 'url', 'data']\n};\n",
+      "start": 1715171819818,
+      "end": 1715171819830,
+      "sourcemaps": null
+    },
+    {
+      "name": "vite:css",
+      "start": 1715171819830,
+      "end": 1715171819830,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1715171819830,
+      "end": 1715171819830,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1715171819830,
+      "end": 1715171819830,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1715171819830,
+      "end": 1715171819830,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1715171819830,
+      "end": 1715171819830,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1715171819830,
+      "end": 1715171819830,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1715171819830,
+      "end": 1715171819830,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1715171819830,
+      "end": 1715171819830,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1715171819830,
+      "end": 1715171819830,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1715171819830,
+      "end": 1715171819830,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1715171819830,
+      "end": 1715171819830,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1715171819830,
+      "end": 1715171819830,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1715171819830,
+      "end": 1715171819830,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1715171819830,
+      "end": 1715171819830,
+      "order": "normal"
+    }
+  ]
+}

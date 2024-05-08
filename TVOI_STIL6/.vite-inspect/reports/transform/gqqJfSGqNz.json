@@ -1,0 +1,96 @@
+{
+  "resolvedId": "C:/Users/Local/Desktop/TVOI/TVOI_STIL6/src/js/cart.js",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "import \"/src/normalize.css\";\r\nimport \"/src/style.css\";\r\nimport \"/src/form.css\";\r\nimport \"/src/cs.css\";\r\nimport \"/src/cart.css\";\r\nimport \"/src/contact.css\";\r\n\r\n// Утилиты\r\n\r\nfunction toNum(str) {\r\n  const num = Number(str.replace(/ /g, \"\"));\r\n  return num;\r\n}\r\n\r\nfunction toCurrency(num) {\r\n  const format = new Intl.NumberFormat(\"ru-RU\", {\r\n    style: \"currency\",\r\n    currency: \"RUB\",\r\n    minimumFractionDigits: 0,\r\n  }).format(num);\r\n  return format;\r\n}\r\n\r\n// Корзина\r\n\r\nconst cardAddArr = Array.from(document.querySelectorAll(\".card__add\"));\r\nconst cartNum = document.querySelector(\"#cart_num\");\r\nconst cart = document.querySelector(\"#cart\");\r\n\r\nclass Cart {\r\n  products;\r\n  constructor() {\r\n    this.products = [];\r\n  }\r\n  get count() {\r\n    return this.products.length;\r\n  }\r\n  addProduct(product) {\r\n    this.products.push(product);\r\n  }\r\n  removeProduct(index) {\r\n    this.products.splice(index, 1);\r\n  }\r\n  get cost() {\r\n    const prices = this.products.map((product) => {\r\n      return toNum(product.price);\r\n    });\r\n    const sum = prices.reduce((acc, num) => {\r\n      return acc + num;\r\n    }, 0);\r\n    return sum;\r\n  }\r\n}\r\n\r\nclass Product {\r\n  imageSrc;\r\n  name;\r\n  price;\r\n  constructor(card) {\r\n    this.imageSrc = card.querySelector(\".item__img\").src;\r\n    this.name = card.querySelector(\".title\").innerText;\r\n    this.price = card.querySelector(\".price\").innerText;\r\n  }\r\n}\r\n\r\nconst myCart = new Cart();\r\n\r\nif (localStorage.getItem(\"cart\") == null) {\r\n  localStorage.setItem(\"cart\", JSON.stringify(myCart));\r\n}\r\n\r\n// Попап\r\n\r\nconst popup = document.querySelector(\".popup\");\r\nconst popupClose = document.querySelector(\"#popup_close\");\r\nconst body = document.body;\r\nconst popupContainer = document.querySelector(\"#popup_container\");\r\nconst popupProductList = document.querySelector(\"#popup_product_list\");\r\nconst popupCost = document.querySelector(\"#popup_cost\");\r\n\r\ncart.addEventListener(\"click\", (e) => {\r\n  e.preventDefault();\r\n  popup.classList.add(\"popup--open\");\r\n  body.classList.add(\"lock\");\r\n  popupContainerFill();\r\n});\r\n\r\nif (localStorage.getItem(\"cart\")) {\r\n  const savedCart = JSON.parse(localStorage.getItem(\"cart\"));\r\n  myCart.products = savedCart.products;\r\n  cartNum.textContent = myCart.count;\r\n}\r\n\r\nfunction popupContainerFill() {\r\n  popupProductList.innerHTML = null;\r\n  const savedCart = JSON.parse(localStorage.getItem(\"cart\"));\r\n  myCart.products = savedCart.products;\r\n  cartNum.textContent = myCart.count;\r\n\r\n  const productsHTML = myCart.products.map((product) => {\r\n    const productItem = document.createElement(\"div\");\r\n    productItem.classList.add(\"popup__product\");\r\n\r\n    const productWrap1 = document.createElement(\"div\");\r\n    productWrap1.classList.add(\"popup__product-wrap\");\r\n    const productWrap2 = document.createElement(\"div\");\r\n    productWrap2.classList.add(\"popup__product-wrap\");\r\n\r\n    const productImage = document.createElement(\"img\");\r\n    productImage.classList.add(\"popup__product-image\");\r\n    productImage.setAttribute(\"src\", product.imageSrc);\r\n\r\n    const productTitle = document.createElement(\"h2\");\r\n    productTitle.classList.add(\"popup__product-title\");\r\n    productTitle.innerHTML = product.name;\r\n\r\n    const productPrice = document.createElement(\"div\");\r\n    productPrice.classList.add(\"popup__product-price\");\r\n    productPrice.innerHTML = toCurrency(toNum(product.price));\r\n\r\n    const productDelete = document.createElement(\"button\");\r\n    productDelete.classList.add(\"popup__product-delete\");\r\n    productDelete.innerHTML = \"&times;\";\r\n\r\n    productDelete.addEventListener(\"click\", () => {\r\n      const clos = document.querySelectorAll(\".popup__product-delete\");\r\n\r\n      clos.forEach((item, index) => {\r\n        if (item === productDelete) {\r\n          myCart.removeProduct(index);\r\n          localStorage.setItem(\"cart\", JSON.stringify(myCart));\r\n          popupContainerFill();\r\n\r\n          cartNum.textContent = myCart.count;\r\n        }\r\n      });\r\n    });\r\n\r\n    productWrap1.appendChild(productImage);\r\n    productWrap1.appendChild(productTitle);\r\n    productWrap2.appendChild(productPrice);\r\n    productWrap2.appendChild(productDelete);\r\n    productItem.appendChild(productWrap1);\r\n    productItem.appendChild(productWrap2);\r\n\r\n    return productItem;\r\n  });\r\n\r\n  productsHTML.forEach((productHTML) => {\r\n    popupProductList.appendChild(productHTML);\r\n  });\r\n\r\n  popupCost.value = toCurrency(myCart.cost);\r\n}\r\n\r\npopupClose.addEventListener(\"click\", (e) => {\r\n  e.preventDefault();\r\n  popup.classList.remove(\"popup--open\");\r\n  body.classList.remove(\"lock\");\r\n});\r\nwindow.onclick = function (event) {\r\n  const popup = document.getElementById(\"popup\");\r\n  const modal = document.getElementById(\"myModal\");\r\n  if (event.target == popup) {\r\n    popup.classList.remove(\"popup--open\");\r\n    body.classList.remove(\"lock\");\r\n  }\r\n  if (event.target == modal) {\r\n    modal.style.display = \"none\";\r\n    body.classList.remove(\"lock\");\r\n  }\r\n};\r\n\r\nexport { Product, myCart, cartNum };\r\n",
+      "start": 1715171819718,
+      "end": 1715171819720,
+      "sourcemaps": null
+    },
+    {
+      "name": "vite:css",
+      "start": 1715171819720,
+      "end": 1715171819721,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1715171819721,
+      "end": 1715171819721,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1715171819721,
+      "end": 1715171819721,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1715171819721,
+      "end": 1715171819721,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1715171819721,
+      "end": 1715171819721,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1715171819721,
+      "end": 1715171819721,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1715171819721,
+      "end": 1715171819721,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1715171819721,
+      "end": 1715171819721,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1715171819721,
+      "end": 1715171819721,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1715171819721,
+      "end": 1715171819721,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1715171819721,
+      "end": 1715171819721,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1715171819721,
+      "end": 1715171819721,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1715171819721,
+      "end": 1715171819721,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1715171819721,
+      "end": 1715171819721,
+      "order": "normal"
+    }
+  ]
+}

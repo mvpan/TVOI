@@ -1,0 +1,102 @@
+{
+  "resolvedId": "C:/Users/Local/Desktop/TVOI/TVOI_STIL6/src/style.css",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "* {\r\n  box-sizing: border-box;\r\n}\r\n\r\nhtml {\r\n  scrollbar-gutter: stable;\r\n}\r\n\r\nbody {\r\n  display: flex;\r\n  flex-direction: column;\r\n  background-color: #fff;\r\n  /* color: #fff; */\r\n}\r\n.lock {\r\n  overflow-y: hidden;\r\n}\r\na {\r\n  text-decoration: none;\r\n  color: white;\r\n}\r\n\r\n.container {\r\n  max-width: 1535px;\r\n  margin: 0 auto;\r\n  padding: 0 15px;\r\n}\r\n.header {\r\n  position: relative;\r\n  z-index: 3;\r\n  background-color: #0e141c;\r\n  box-shadow: 0px 2px 4px 0px #0a0f14, 0px 0px 8px 0px #0a0f14;\r\n  color: white;\r\n}\r\n.header__dop {\r\n  display: flex;\r\n  flex-direction: row;\r\n  align-items: center;\r\n}\r\n.header__links {\r\n  display: flex;\r\n  justify-content: space-between;\r\n  align-items: center;\r\n  flex-shrink: 0;\r\n}\r\n.header__links__item:not(:last-child) {\r\n  margin-right: 32px;\r\n}\r\n.header__container {\r\n  padding-top: 28px !important;\r\n  padding-bottom: 28px !important;\r\n  display: flex;\r\n  justify-content: space-around;\r\n  align-items: center;\r\n}\r\n.header__logo {\r\n  display: flex;\r\n  flex-shrink: 2;\r\n}\r\n.main {\r\n  padding-bottom: 100px;\r\n}\r\n.main__container {\r\n  display: flex;\r\n  flex-direction: row;\r\n  justify-content: space-around;\r\n  flex-wrap: wrap;\r\n  align-items: center;\r\n  gap: 20px;\r\n}\r\n.main__item {\r\n  display: flex;\r\n  flex-direction: column;\r\n  gap: 15px;\r\n  align-items: center;\r\n  justify-content: center;\r\n  transition: opacity 0.3s ease;\r\n  cursor: pointer;\r\n  padding-bottom: 15px;\r\n}\r\n.main__card {\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: center;\r\n  justify-content: center;\r\n}\r\n\r\n.main__item:hover {\r\n  opacity: 0.8;\r\n}\r\n.main__item--image {\r\n  width: 300px;\r\n  height: 300px;\r\n}\r\n.main__item--text {\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: center;\r\n  gap: 5px;\r\n}\r\n.footer {\r\n  display: flex;\r\n  flex-direction: column;\r\n  background-color: #0e141c;\r\n  color: #fff;\r\n}\r\n.footer__top {\r\n  display: flex;\r\n  flex-direction: row;\r\n  justify-content: space-between;\r\n  align-items: center;\r\n\r\n  padding: 20px;\r\n}\r\n.footer__faq {\r\n  display: flex;\r\n  flex-direction: column;\r\n}\r\n.footer__catalog {\r\n  display: flex;\r\n  flex-direction: column;\r\n}\r\n.footer__socials {\r\n  display: flex;\r\n  flex-direction: column;\r\n}\r\n.footer__bottom {\r\n  display: flex;\r\n  flex-direction: row;\r\n  padding-top: 20px;\r\n  padding-bottom: 20px;\r\n}\r\n\r\n.btn-reset {\r\n  margin: 0;\r\n  padding: 0;\r\n  cursor: pointer;\r\n  background-color: transparent;\r\n  border: none;\r\n}\r\n.list-reset {\r\n  margin: 0;\r\n  padding: 0;\r\n  list-style-type: none;\r\n}\r\np {\r\n  margin: auto;\r\n  text-align: center;\r\n}\r\nh4 {\r\n  margin: auto;\r\n}\r\n.card__add {\r\n  display: block;\r\n  width: 100%;\r\n  font-weight: 400;\r\n  font-size: 17px;\r\n  color: #fff;\r\n  background-color: #0a0f14;\r\n  padding: 10px;\r\n  text-align: center;\r\n  border: 1px solid #0e141c;\r\n  border-radius: 4px;\r\n  cursor: pointer;\r\n  -webkit-transition: 0.2s;\r\n  -o-transition: 0.2s;\r\n  transition: 0.2s;\r\n  margin-top: auto;\r\n}\r\n.card__add:hover {\r\n  background-color: #2b2a25;\r\n  color: #fff;\r\n}\r\n\r\n.card__price:after {\r\n  content: \"₽\";\r\n  margin-left: 4px;\r\n  position: relative;\r\n}\r\n",
+      "start": 1715171819709,
+      "end": 1715171819711,
+      "sourcemaps": null
+    },
+    {
+      "name": "vite:css",
+      "result": "* {\r\n  box-sizing: border-box;\r\n}\r\n\r\nhtml {\r\n  scrollbar-gutter: stable;\r\n}\r\n\r\nbody {\r\n  display: flex;\r\n  flex-direction: column;\r\n  background-color: #fff;\r\n  /* color: #fff; */\r\n}\r\n.lock {\r\n  overflow-y: hidden;\r\n}\r\na {\r\n  text-decoration: none;\r\n  color: white;\r\n}\r\n\r\n.container {\r\n  max-width: 1535px;\r\n  margin: 0 auto;\r\n  padding: 0 15px;\r\n}\r\n.header {\r\n  position: relative;\r\n  z-index: 3;\r\n  background-color: #0e141c;\r\n  box-shadow: 0px 2px 4px 0px #0a0f14, 0px 0px 8px 0px #0a0f14;\r\n  color: white;\r\n}\r\n.header__dop {\r\n  display: flex;\r\n  flex-direction: row;\r\n  align-items: center;\r\n}\r\n.header__links {\r\n  display: flex;\r\n  justify-content: space-between;\r\n  align-items: center;\r\n  flex-shrink: 0;\r\n}\r\n.header__links__item:not(:last-child) {\r\n  margin-right: 32px;\r\n}\r\n.header__container {\r\n  padding-top: 28px !important;\r\n  padding-bottom: 28px !important;\r\n  display: flex;\r\n  justify-content: space-around;\r\n  align-items: center;\r\n}\r\n.header__logo {\r\n  display: flex;\r\n  flex-shrink: 2;\r\n}\r\n.main {\r\n  padding-bottom: 100px;\r\n}\r\n.main__container {\r\n  display: flex;\r\n  flex-direction: row;\r\n  justify-content: space-around;\r\n  flex-wrap: wrap;\r\n  align-items: center;\r\n  gap: 20px;\r\n}\r\n.main__item {\r\n  display: flex;\r\n  flex-direction: column;\r\n  gap: 15px;\r\n  align-items: center;\r\n  justify-content: center;\r\n  transition: opacity 0.3s ease;\r\n  cursor: pointer;\r\n  padding-bottom: 15px;\r\n}\r\n.main__card {\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: center;\r\n  justify-content: center;\r\n}\r\n\r\n.main__item:hover {\r\n  opacity: 0.8;\r\n}\r\n.main__item--image {\r\n  width: 300px;\r\n  height: 300px;\r\n}\r\n.main__item--text {\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: center;\r\n  gap: 5px;\r\n}\r\n.footer {\r\n  display: flex;\r\n  flex-direction: column;\r\n  background-color: #0e141c;\r\n  color: #fff;\r\n}\r\n.footer__top {\r\n  display: flex;\r\n  flex-direction: row;\r\n  justify-content: space-between;\r\n  align-items: center;\r\n\r\n  padding: 20px;\r\n}\r\n.footer__faq {\r\n  display: flex;\r\n  flex-direction: column;\r\n}\r\n.footer__catalog {\r\n  display: flex;\r\n  flex-direction: column;\r\n}\r\n.footer__socials {\r\n  display: flex;\r\n  flex-direction: column;\r\n}\r\n.footer__bottom {\r\n  display: flex;\r\n  flex-direction: row;\r\n  padding-top: 20px;\r\n  padding-bottom: 20px;\r\n}\r\n\r\n.btn-reset {\r\n  margin: 0;\r\n  padding: 0;\r\n  cursor: pointer;\r\n  background-color: transparent;\r\n  border: none;\r\n}\r\n.list-reset {\r\n  margin: 0;\r\n  padding: 0;\r\n  list-style-type: none;\r\n}\r\np {\r\n  margin: auto;\r\n  text-align: center;\r\n}\r\nh4 {\r\n  margin: auto;\r\n}\r\n.card__add {\r\n  display: block;\r\n  width: 100%;\r\n  font-weight: 400;\r\n  font-size: 17px;\r\n  color: #fff;\r\n  background-color: #0a0f14;\r\n  padding: 10px;\r\n  text-align: center;\r\n  border: 1px solid #0e141c;\r\n  border-radius: 4px;\r\n  cursor: pointer;\r\n  -webkit-transition: 0.2s;\r\n  -o-transition: 0.2s;\r\n  transition: 0.2s;\r\n  margin-top: auto;\r\n}\r\n.card__add:hover {\r\n  background-color: #2b2a25;\r\n  color: #fff;\r\n}\r\n\r\n.card__price:after {\r\n  content: \"₽\";\r\n  margin-left: 4px;\r\n  position: relative;\r\n}\r\n",
+      "start": 1715171819711,
+      "end": 1715171819844,
+      "order": "normal",
+      "sourcemaps": null
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1715171819844,
+      "end": 1715171819844,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1715171819844,
+      "end": 1715171819844,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1715171819844,
+      "end": 1715171819844,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1715171819844,
+      "end": 1715171819844,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "result": "",
+      "start": 1715171819844,
+      "end": 1715171819844,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1715171819844,
+      "end": 1715171819844,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1715171819844,
+      "end": 1715171819844,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1715171819844,
+      "end": 1715171819844,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1715171819844,
+      "end": 1715171819844,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1715171819844,
+      "end": 1715171819844,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1715171819844,
+      "end": 1715171819844,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1715171819844,
+      "end": 1715171819845,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1715171819845,
+      "end": 1715171819845,
+      "order": "normal"
+    }
+  ]
+}

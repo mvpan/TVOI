@@ -1,0 +1,96 @@
+{
+  "resolvedId": "C:/Users/Local/Desktop/TVOI/TVOI_STIL6/node_modules/axios/lib/helpers/isAxiosError.js",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "'use strict';\n\nimport utils from './../utils.js';\n\n/**\n * Determines whether the payload is an error thrown by Axios\n *\n * @param {*} payload The value to test\n *\n * @returns {boolean} True if the payload is an error thrown by Axios, otherwise false\n */\nexport default function isAxiosError(payload) {\n  return utils.isObject(payload) && (payload.isAxiosError === true);\n}\n",
+      "start": 1715171819744,
+      "end": 1715171819763,
+      "sourcemaps": null
+    },
+    {
+      "name": "vite:css",
+      "start": 1715171819763,
+      "end": 1715171819763,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1715171819763,
+      "end": 1715171819763,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1715171819763,
+      "end": 1715171819763,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1715171819763,
+      "end": 1715171819763,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1715171819763,
+      "end": 1715171819763,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1715171819763,
+      "end": 1715171819763,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1715171819763,
+      "end": 1715171819763,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1715171819763,
+      "end": 1715171819763,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1715171819763,
+      "end": 1715171819763,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1715171819763,
+      "end": 1715171819764,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1715171819764,
+      "end": 1715171819764,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1715171819764,
+      "end": 1715171819764,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1715171819764,
+      "end": 1715171819764,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1715171819764,
+      "end": 1715171819764,
+      "order": "normal"
+    }
+  ]
+}
