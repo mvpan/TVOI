@@ -37,9 +37,13 @@ jobs:
           cache: 'yarn'
           cache-dependency-path: TVOI_STIL6/yarn.lock
       - name: Install dependencies
-        run: yarn install
+        run: |
+          cd .\TVOI_STIL6\
+          yarn install 
       - name: Build
-        run: yarn build
+        run: |
+          cd .\TVOI_STIL6\
+          yarn build
       - name: Setup Pages
         uses: actions/configure-pages@v4
       - name: Upload artifact
