@@ -35,12 +35,11 @@ jobs:
         with:
           node-version: 20
           cache: 'yarn'
+          cache-dependency-path: subdir/yarn.lock
       - name: Install dependencies
         run: yarn install
-        working-directory: TVOI/TVOI_STIL6
       - name: Build
         run: yarn build
-        working-directory: TVOI/TVOI_STIL6
       - name: Setup Pages
         uses: actions/configure-pages@v4
       - name: Upload artifact
