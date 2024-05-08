@@ -4,93 +4,93 @@
     {
       "name": "vite:load-fallback",
       "result": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\" />\n    <link rel=\"icon\" type=\"image/svg+xml\" href=\"/vite.svg\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    <title>Vite App</title>\n    <link rel=\"stylesheet\" href=\"./src/load.css\" />\n    <link rel=\"stylesheet\" href=\"./src/style.css\" />\n  </head>\n  <body>\n    <header class=\"header\">\n      <div class=\"container header__container\">\n        <div class=\"header__logo\">\n          <a\n            href=\"#\"\n            class=\"header__links__item__btn header__links__item__btn--favorites\"\n            >TVOI_STIL6</a\n          >\n        </div>\n        <ul class=\"header__links list-reset\">\n          <li class=\"header__links__item\">\n            <a\n              href=\"/cloth.html\"\n              class=\"header__links__item__btn header__links__item__btn--favorites\"\n              >Верхняя одежда</a\n            >\n          </li>\n          <li class=\"header__links__item\">\n            <a\n              href=\"#\"\n              class=\"header__links__item__btn header__links__item__btn--compare\"\n              >Штаны</a\n            >\n          </li>\n          <li class=\"header__links__item\">\n            <a\n              href=\"/accessories.html\"\n              class=\"header__links__item__btn header__links__item__btn--cart\"\n              >Аксесуары</a\n            >\n          </li>\n        </ul>\n        <div class=\"header__dop\">\n          <a\n            href=\"./contacts.html\"\n            class=\"header__links__item__btn header__links__item__btn--favorites\"\n            >Контакты</a\n          >\n          <div class=\"header__cart\">\n            <button class=\"cart\" id=\"cart\">\n              <img class=\"cart__image\" src=\"/cart.svg\" alt=\"Cart\" />\n              <div class=\"cart__num\" id=\"cart_num\">0</div>\n            </button>\n          </div>\n        </div>\n      </div>\n    </header>\n    <main class=\"main\">\n      <div class=\"loader\">\n        <div class=\"spinner\"></div>\n      </div>\n      <h1 id=\"2\" class=\"mm\" style=\"text-align: center\">Кроссовки</h1>\n      <div class=\"container main__container\" id=\"productsContainer\"></div>\n      <div class=\"modal\" id=\"myModal\">\n        <div class=\"modal-content item\">\n          <span class=\"close\">&times;</span>\n          <img\n            src=\"\"\n            alt=\"Изображение\"\n            id=\"modalImg\"\n            class=\"modal-img item__img\"\n            width=\"300px\"\n            height=\"300px\"\n          />\n          <div class=\"modal__text\">\n            <h2 id=\"modalName\" class=\"modal-name title\"></h2>\n            <p class=\"modal-brand\" id=\"modalBrand\"></p>\n            <p class=\"modal-price price card__price\" id=\"modalPrice\"></p>\n            <p class=\"modal-atribut\" id=\"modalAtribut\"></p>\n            <button class=\"card__add\">В корзину</button>\n          </div>\n        </div>\n      </div>\n      <div class=\"popup\" id=\"popup\">\n        <div class=\"popup__container\" id=\"popup_container\">\n          <div class=\"popup__item\">\n            <h1 class=\"popup__title\">Оформление заказа</h1>\n          </div>\n          <div class=\"popup__item\" id=\"popup_product_list\"></div>\n          <div class=\"popup__item\">\n            <div class=\"popup__cost\">\n              <h2 class=\"popup__cost-title\">Итого</h2>\n              <output class=\"popup__cost-value\" id=\"popup_cost\"></output>\n            </div>\n          </div>\n          <button class=\"popup__close\" id=\"popup_close\">\n            <span class=\"close-icon\">&times;</span>\n          </button>\n          <div class=\"popup__item\">\n            <div class=\"col-md-6 offset-md-3\">\n              <form id=\"tg\" class=\"form-container\">\n                <div class=\"form-group\">\n                  <label for=\"first_name\">Имя:</label>\n                  <input\n                    type=\"text\"\n                    id=\"first_name\"\n                    name=\"first_name\"\n                    required\n                  />\n                </div>\n                <div class=\"form-group\">\n                  <label for=\"last_name\">Фамилия:</label>\n                  <input type=\"text\" id=\"last_name\" name=\"last_name\" required />\n                </div>\n                <div class=\"form-group\">\n                  <label for=\"phone\">Телефон:</label>\n                  <input type=\"tel\" id=\"phone\" name=\"phone\" required />\n                </div>\n                <div class=\"form-group\">\n                  <label for=\"contact_method\">Как с вами связаться?</label>\n                  <select id=\"contact_method\" name=\"contact_method\" required>\n                    <option value=\"\">Выберите метод</option>\n                    <option value=\"phone\">Telegram</option>\n                    <option value=\"phone\">WhatsApp</option>\n                  </select>\n                </div>\n                <div class=\"form-group\">\n                  <label for=\"email\">Email:</label>\n                  <input type=\"email\" id=\"email\" name=\"email\" required />\n                </div>\n                <div class=\"form-group\">\n                  <label for=\"address\">Комментарий к заказу:</label>\n                  <input type=\"text\" id=\"address\" name=\"address\" required />\n                </div>\n                <!-- <div class=\"form-group\">\n                  <input\n                    type=\"checkbox\"\n                    id=\"agree_terms\"\n                    name=\"agree_terms\"\n                    required\n                  />\n                  <label for=\"agree_terms\"\n                    >Я согласен с условиями политики конфиденциальности</label\n                  >\n                </div> -->\n                <button type=\"submit\" class=\"btn\">Отправить</button>\n              </form>\n            </div>\n          </div>\n        </div>\n      </div>\n    </main>\n    <footer class=\"footer\">\n      <div class=\"container\">\n        <div class=\"footer__top\">\n          <div class=\"footer__logo\">\n            <a href=\"\">TVOI_STIL6</a>\n          </div>\n          <div class=\"footer__faq\">\n            <h4>ПОДДЕРЖКА</h4>\n            <a\n              href=\"\"\n              class=\"header__links__item__btn header__links__item__btn--favorites\"\n              >Доставка</a\n            >\n            <a\n              href=\"\"\n              class=\"header__links__item__btn header__links__item__btn--favorites\"\n              >Гарантия качества</a\n            >\n            <a\n              href=\"\"\n              class=\"header__links__item__btn header__links__item__btn--favorites\"\n              >Оплата и возврат</a\n            >\n          </div>\n          <div class=\"footer__catalog\">\n            <h4>КАТАЛОГ</h4>\n            <a\n              href=\"\"\n              class=\"header__links__item__btn header__links__item__btn--favorites\"\n              >Футболки</a\n            >\n            <a\n              href=\"\"\n              class=\"header__links__item__btn header__links__item__btn--favorites\"\n              >Толстовки</a\n            >\n            <a\n              href=\"\"\n              class=\"header__links__item__btn header__links__item__btn--favorites\"\n              >Аксесуары</a\n            >\n          </div>\n          <div class=\"footer__socials\">\n            <h4>Социальные сети</h4>\n            <a href=\"\">Телегра</a>\n            <a href=\"\">Вк</a>\n            <a href=\"\">Аксесуары</a>\n          </div>\n        </div>\n        <div class=\"footer__bottom\">\n          <div>© 2017-2023 Street Republic Все права защищены</div>\n          <div class=\"footer__bottom--policy\">\n            <p>Политика обработки данных</p>\n            <p>Политика конфиденциальности</p>\n          </div>\n        </div>\n      </div>\n    </footer>\n\n    <script type=\"module\" src=\"main.js\"></script>\n    <script type=\"module\" src=\"./src/js/cart.js\"></script>\n    <script type=\"module\" src=\"./src/js/tg_form.js\"></script>\n    <script type=\"module\" src=\"./src/js/js.js\"></script>\n  </body>\n</html>\n",
-      "start": 1715183590300,
-      "end": 1715183590301,
+      "start": 1715189660687,
+      "end": 1715189660689,
       "sourcemaps": null
     },
     {
       "name": "vite:css",
-      "start": 1715183590302,
-      "end": 1715183590302,
+      "start": 1715189660690,
+      "end": 1715189660690,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
-      "start": 1715183590302,
-      "end": 1715183590303,
+      "start": 1715189660690,
+      "end": 1715189660690,
       "order": "normal"
     },
     {
       "name": "vite:json",
-      "start": 1715183590303,
-      "end": 1715183590303,
+      "start": 1715189660690,
+      "end": 1715189660690,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1715183590303,
-      "end": 1715183590303,
+      "start": 1715189660690,
+      "end": 1715189660691,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1715183590303,
-      "end": 1715183590303,
+      "start": 1715189660691,
+      "end": 1715189660691,
       "order": "normal"
     },
     {
       "name": "vite:css-post",
-      "start": 1715183590303,
-      "end": 1715183590304,
+      "start": 1715189660691,
+      "end": 1715189660691,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
       "result": "import \"vite/modulepreload-polyfill\";\n\nimport \"./src/load.css\"\nimport \"./src/style.css\"\nimport \"main.js\"\nimport \"./src/js/cart.js\"\nimport \"./src/js/tg_form.js\"\nimport \"./src/js/js.js\"",
-      "start": 1715183590304,
-      "end": 1715183590337,
+      "start": 1715189660691,
+      "end": 1715189660727,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1715183590337,
-      "end": 1715183590337,
+      "start": 1715189660727,
+      "end": 1715189660727,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1715183590337,
-      "end": 1715183590337,
+      "start": 1715189660727,
+      "end": 1715189660728,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1715183590337,
-      "end": 1715183590338,
+      "start": 1715189660728,
+      "end": 1715189660728,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1715183590338,
-      "end": 1715183590338,
+      "start": 1715189660728,
+      "end": 1715189660728,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1715183590338,
-      "end": 1715183590338,
+      "start": 1715189660728,
+      "end": 1715189660728,
       "order": "normal"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1715183590338,
-      "end": 1715183590339,
+      "start": 1715189660728,
+      "end": 1715189660730,
       "order": "normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1715183590339,
-      "end": 1715183590341,
+      "start": 1715189660730,
+      "end": 1715189660731,
       "order": "normal"
     }
   ]

@@ -4,92 +4,92 @@
     {
       "name": "vite:load-fallback",
       "result": "export function hideLoader() {\r\n  const body = document.body; // Получаем элемент <body>\r\n\r\n  // Находим загрузочный элемент (например, с классом \"loader\") внутри <body>\r\n  const loader = body.querySelector(\".loader\");\r\n\r\n  // Добавляем класс \"loader--hidden\" для скрытия загрузочного элемента\r\n  loader.classList.add(\"loader--hidden\");\r\n\r\n  // Устанавливаем таймер для окончательного скрытия загрузочного элемента через 500 миллисекунд\r\n  setTimeout(function () {\r\n    loader.style.display = \"none\"; // Устанавливаем display: none; для элемента loader\r\n  }, 500);\r\n}\r\n",
-      "start": 1715183590368,
-      "end": 1715183590378,
+      "start": 1715189660758,
+      "end": 1715189660771,
       "sourcemaps": null
     },
     {
       "name": "vite:css",
-      "start": 1715183590378,
-      "end": 1715183590378,
+      "start": 1715189660771,
+      "end": 1715189660771,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
-      "start": 1715183590378,
-      "end": 1715183590378,
+      "start": 1715189660771,
+      "end": 1715189660771,
       "order": "normal"
     },
     {
       "name": "vite:json",
-      "start": 1715183590378,
-      "end": 1715183590378,
+      "start": 1715189660771,
+      "end": 1715189660771,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1715183590378,
-      "end": 1715183590378,
+      "start": 1715189660771,
+      "end": 1715189660771,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1715183590378,
-      "end": 1715183590378,
+      "start": 1715189660771,
+      "end": 1715189660771,
       "order": "normal"
     },
     {
       "name": "vite:css-post",
-      "start": 1715183590378,
-      "end": 1715183590378,
+      "start": 1715189660771,
+      "end": 1715189660771,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1715183590378,
-      "end": 1715183590378,
+      "start": 1715189660771,
+      "end": 1715189660771,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1715183590378,
-      "end": 1715183590378,
+      "start": 1715189660771,
+      "end": 1715189660771,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1715183590378,
-      "end": 1715183590378,
+      "start": 1715189660771,
+      "end": 1715189660771,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1715183590378,
-      "end": 1715183590378,
+      "start": 1715189660771,
+      "end": 1715189660771,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1715183590378,
-      "end": 1715183590378,
+      "start": 1715189660771,
+      "end": 1715189660771,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1715183590378,
-      "end": 1715183590378,
+      "start": 1715189660771,
+      "end": 1715189660771,
       "order": "normal"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1715183590378,
-      "end": 1715183590378,
+      "start": 1715189660771,
+      "end": 1715189660771,
       "order": "normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1715183590378,
-      "end": 1715183590378,
+      "start": 1715189660771,
+      "end": 1715189660771,
       "order": "normal"
     }
   ]

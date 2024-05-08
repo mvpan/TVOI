@@ -26,19 +26,19 @@
       "plugins": [
         {
           "name": "vite:load-fallback",
-          "transform": 1
+          "transform": 2
         },
         {
           "name": "vite:build-html",
-          "transform": 33
+          "transform": 36
         },
         {
           "name": "vite:resolve",
-          "resolveId": 0
+          "resolveId": 1
         }
       ],
       "virtual": false,
-      "totalTime": 34,
+      "totalTime": 38,
       "invokeCount": 1,
       "sourceSize": 8183,
       "distSize": 0
@@ -49,15 +49,15 @@
       "plugins": [
         {
           "name": "vite:load-fallback",
-          "transform": 1
+          "transform": 4
         },
         {
           "name": "vite:resolve",
-          "resolveId": 1
+          "resolveId": 0
         }
       ],
       "virtual": false,
-      "totalTime": 1,
+      "totalTime": 4,
       "invokeCount": 1,
       "sourceSize": 163,
       "distSize": 0
@@ -68,7 +68,7 @@
       "plugins": [
         {
           "name": "vite:load-fallback",
-          "transform": 5
+          "transform": 4
         },
         {
           "name": "vite:resolve",
@@ -80,7 +80,7 @@
         }
       ],
       "virtual": false,
-      "totalTime": 5,
+      "totalTime": 4,
       "invokeCount": 1,
       "sourceSize": 681,
       "distSize": 0
@@ -91,19 +91,19 @@
       "plugins": [
         {
           "name": "vite:load-fallback",
-          "transform": 15
+          "transform": 18
         },
         {
           "name": "vite:resolve",
-          "resolveId": 1
+          "resolveId": 2
         },
         {
           "name": "vite:resolve",
-          "resolveId": 1
+          "resolveId": 0
         }
       ],
       "virtual": false,
-      "totalTime": 15,
+      "totalTime": 18,
       "invokeCount": 1,
       "sourceSize": 1908,
       "distSize": 0
@@ -114,7 +114,7 @@
       "plugins": [
         {
           "name": "vite:load-fallback",
-          "transform": 10
+          "transform": 15
         },
         {
           "name": "vite:resolve",
@@ -122,7 +122,7 @@
         }
       ],
       "virtual": false,
-      "totalTime": 10,
+      "totalTime": 15,
       "invokeCount": 1,
       "sourceSize": 8842,
       "distSize": 0
@@ -137,7 +137,7 @@
         },
         {
           "name": "vite:resolve",
-          "resolveId": 0
+          "resolveId": 1
         }
       ],
       "virtual": false,
@@ -152,15 +152,15 @@
       "plugins": [
         {
           "name": "vite:load-fallback",
-          "transform": 9
+          "transform": 13
         },
         {
           "name": "vite:resolve",
-          "resolveId": 3
+          "resolveId": 4
         }
       ],
       "virtual": false,
-      "totalTime": 9,
+      "totalTime": 13,
       "invokeCount": 1,
       "sourceSize": 2525,
       "distSize": 0
@@ -171,15 +171,15 @@
       "plugins": [
         {
           "name": "vite:load-fallback",
-          "transform": 13
+          "transform": 12
         },
         {
           "name": "vite:resolve",
-          "resolveId": 3
+          "resolveId": 4
         },
         {
           "name": "vite:resolve",
-          "resolveId": 0
+          "resolveId": 1
         },
         {
           "name": "vite:resolve",
@@ -191,7 +191,7 @@
         }
       ],
       "virtual": false,
-      "totalTime": 13,
+      "totalTime": 12,
       "invokeCount": 1,
       "sourceSize": 697,
       "distSize": 0
@@ -202,19 +202,19 @@
       "plugins": [
         {
           "name": "vite:load-fallback",
-          "transform": 12
+          "transform": 14
         },
         {
           "name": "vite:resolve",
-          "resolveId": 2
+          "resolveId": 3
         },
         {
           "name": "vite:resolve",
-          "resolveId": 2
+          "resolveId": 1
         }
       ],
       "virtual": false,
-      "totalTime": 12,
+      "totalTime": 14,
       "invokeCount": 1,
       "sourceSize": 99,
       "distSize": 0
@@ -225,15 +225,15 @@
       "plugins": [
         {
           "name": "vite:load-fallback",
-          "transform": 7
+          "transform": 9
         },
         {
           "name": "vite:resolve",
-          "resolveId": 4
+          "resolveId": 5
         }
       ],
       "virtual": false,
-      "totalTime": 7,
+      "totalTime": 9,
       "invokeCount": 1,
       "sourceSize": 6256,
       "distSize": 0
@@ -244,7 +244,11 @@
       "plugins": [
         {
           "name": "vite:load-fallback",
-          "transform": 13
+          "transform": 14
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 3
         },
         {
           "name": "vite:resolve",
@@ -252,14 +256,6 @@
         },
         {
           "name": "vite:resolve",
-          "resolveId": 1
-        },
-        {
-          "name": "vite:resolve",
-          "resolveId": 1
-        },
-        {
-          "name": "vite:resolve",
           "resolveId": 0
         },
         {
@@ -277,10 +273,14 @@
         {
           "name": "vite:resolve",
           "resolveId": 1
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 0
         }
       ],
       "virtual": false,
-      "totalTime": 13,
+      "totalTime": 14,
       "invokeCount": 1,
       "sourceSize": 2532,
       "distSize": 0
@@ -291,11 +291,15 @@
       "plugins": [
         {
           "name": "vite:load-fallback",
-          "transform": 17
+          "transform": 16
         },
         {
           "name": "vite:resolve",
-          "resolveId": 1
+          "resolveId": 2
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 0
         },
         {
           "name": "vite:resolve",
@@ -307,11 +311,7 @@
         },
         {
           "name": "vite:resolve",
-          "resolveId": 1
-        },
-        {
-          "name": "vite:resolve",
-          "resolveId": 1
+          "resolveId": 0
         },
         {
           "name": "vite:resolve",
@@ -319,7 +319,7 @@
         }
       ],
       "virtual": false,
-      "totalTime": 17,
+      "totalTime": 16,
       "invokeCount": 1,
       "sourceSize": 6889,
       "distSize": 0
@@ -349,7 +349,7 @@
       "plugins": [
         {
           "name": "vite:load-fallback",
-          "transform": 17
+          "transform": 18
         },
         {
           "name": "vite:resolve",
@@ -361,7 +361,7 @@
         }
       ],
       "virtual": false,
-      "totalTime": 17,
+      "totalTime": 18,
       "invokeCount": 1,
       "sourceSize": 695,
       "distSize": 0
@@ -372,7 +372,7 @@
       "plugins": [
         {
           "name": "vite:load-fallback",
-          "transform": 18
+          "transform": 20
         },
         {
           "name": "vite:resolve",
@@ -380,7 +380,7 @@
         }
       ],
       "virtual": false,
-      "totalTime": 18,
+      "totalTime": 20,
       "invokeCount": 1,
       "sourceSize": 2187,
       "distSize": 0
@@ -391,11 +391,11 @@
       "plugins": [
         {
           "name": "vite:load-fallback",
-          "transform": 1
+          "transform": 12
         },
         {
           "name": "vite:resolve",
-          "resolveId": 4
+          "resolveId": 5
         },
         {
           "name": "vite:resolve",
@@ -403,7 +403,7 @@
         }
       ],
       "virtual": false,
-      "totalTime": 1,
+      "totalTime": 12,
       "invokeCount": 1,
       "sourceSize": 3376,
       "distSize": 0
@@ -414,7 +414,7 @@
       "plugins": [
         {
           "name": "vite:load-fallback",
-          "transform": 4
+          "transform": 9
         },
         {
           "name": "vite:resolve",
@@ -422,7 +422,7 @@
         }
       ],
       "virtual": false,
-      "totalTime": 4,
+      "totalTime": 9,
       "invokeCount": 1,
       "sourceSize": 836,
       "distSize": 0
@@ -433,7 +433,7 @@
       "plugins": [
         {
           "name": "vite:load-fallback",
-          "transform": 14
+          "transform": 12
         },
         {
           "name": "vite:resolve",
@@ -441,7 +441,7 @@
         }
       ],
       "virtual": false,
-      "totalTime": 14,
+      "totalTime": 12,
       "invokeCount": 1,
       "sourceSize": 778,
       "distSize": 0
@@ -452,11 +452,11 @@
       "plugins": [
         {
           "name": "vite:load-fallback",
-          "transform": 10
+          "transform": 6
         },
         {
           "name": "vite:resolve",
-          "resolveId": 4
+          "resolveId": 5
         },
         {
           "name": "vite:resolve",
@@ -468,13 +468,59 @@
         }
       ],
       "virtual": false,
-      "totalTime": 10,
+      "totalTime": 6,
       "invokeCount": 1,
       "sourceSize": 4340,
       "distSize": 0
     },
     {
       "id": "C:/Users/Local/Desktop/TVOI/TVOI_STIL6/node_modules/axios/lib/defaults/transitional.js",
+      "deps": [],
+      "plugins": [
+        {
+          "name": "vite:load-fallback",
+          "transform": 25
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 2
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 1
+        }
+      ],
+      "virtual": false,
+      "totalTime": 25,
+      "invokeCount": 1,
+      "sourceSize": 118,
+      "distSize": 0
+    },
+    {
+      "id": "C:/Users/Local/Desktop/TVOI/TVOI_STIL6/node_modules/axios/lib/env/data.js",
+      "deps": [],
+      "plugins": [
+        {
+          "name": "vite:load-fallback",
+          "transform": 13
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 3
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 1
+        }
+      ],
+      "virtual": false,
+      "totalTime": 13,
+      "invokeCount": 1,
+      "sourceSize": 31,
+      "distSize": 0
+    },
+    {
+      "id": "C:/Users/Local/Desktop/TVOI/TVOI_STIL6/node_modules/axios/lib/helpers/AxiosURLSearchParams.js",
       "deps": [],
       "plugins": [
         {
@@ -487,57 +533,11 @@
         },
         {
           "name": "vite:resolve",
-          "resolveId": 2
+          "resolveId": 1
         }
       ],
       "virtual": false,
       "totalTime": 19,
-      "invokeCount": 1,
-      "sourceSize": 118,
-      "distSize": 0
-    },
-    {
-      "id": "C:/Users/Local/Desktop/TVOI/TVOI_STIL6/node_modules/axios/lib/env/data.js",
-      "deps": [],
-      "plugins": [
-        {
-          "name": "vite:load-fallback",
-          "transform": 12
-        },
-        {
-          "name": "vite:resolve",
-          "resolveId": 2
-        },
-        {
-          "name": "vite:resolve",
-          "resolveId": 0
-        }
-      ],
-      "virtual": false,
-      "totalTime": 12,
-      "invokeCount": 1,
-      "sourceSize": 31,
-      "distSize": 0
-    },
-    {
-      "id": "C:/Users/Local/Desktop/TVOI/TVOI_STIL6/node_modules/axios/lib/helpers/AxiosURLSearchParams.js",
-      "deps": [],
-      "plugins": [
-        {
-          "name": "vite:load-fallback",
-          "transform": 17
-        },
-        {
-          "name": "vite:resolve",
-          "resolveId": 0
-        },
-        {
-          "name": "vite:resolve",
-          "resolveId": 0
-        }
-      ],
-      "virtual": false,
-      "totalTime": 17,
       "invokeCount": 1,
       "sourceSize": 1439,
       "distSize": 0
@@ -548,15 +548,15 @@
       "plugins": [
         {
           "name": "vite:load-fallback",
-          "transform": 15
+          "transform": 18
         },
         {
           "name": "vite:resolve",
-          "resolveId": 0
+          "resolveId": 1
         }
       ],
       "virtual": false,
-      "totalTime": 15,
+      "totalTime": 18,
       "invokeCount": 1,
       "sourceSize": 1600,
       "distSize": 0
@@ -567,11 +567,11 @@
       "plugins": [
         {
           "name": "vite:load-fallback",
-          "transform": 7
+          "transform": 1
         },
         {
           "name": "vite:resolve",
-          "resolveId": 4
+          "resolveId": 6
         },
         {
           "name": "vite:resolve",
@@ -579,7 +579,7 @@
         }
       ],
       "virtual": false,
-      "totalTime": 7,
+      "totalTime": 1,
       "invokeCount": 1,
       "sourceSize": 134,
       "distSize": 0
@@ -590,7 +590,7 @@
       "plugins": [
         {
           "name": "vite:load-fallback",
-          "transform": 18
+          "transform": 20
         },
         {
           "name": "vite:resolve",
@@ -602,7 +602,7 @@
         }
       ],
       "virtual": false,
-      "totalTime": 18,
+      "totalTime": 20,
       "invokeCount": 1,
       "sourceSize": 1559,
       "distSize": 0
@@ -613,7 +613,7 @@
       "plugins": [
         {
           "name": "vite:load-fallback",
-          "transform": 18
+          "transform": 22
         },
         {
           "name": "vite:resolve",
@@ -621,7 +621,7 @@
         }
       ],
       "virtual": false,
-      "totalTime": 18,
+      "totalTime": 22,
       "invokeCount": 1,
       "sourceSize": 382,
       "distSize": 0
@@ -632,7 +632,7 @@
       "plugins": [
         {
           "name": "vite:load-fallback",
-          "transform": 5
+          "transform": 9
         },
         {
           "name": "vite:resolve",
@@ -640,7 +640,7 @@
         }
       ],
       "virtual": false,
-      "totalTime": 5,
+      "totalTime": 9,
       "invokeCount": 1,
       "sourceSize": 1045,
       "distSize": 0
@@ -655,11 +655,11 @@
         },
         {
           "name": "vite:resolve",
-          "resolveId": 3
+          "resolveId": 4
         },
         {
           "name": "vite:resolve",
-          "resolveId": 0
+          "resolveId": 1
         }
       ],
       "virtual": false,
@@ -674,7 +674,7 @@
       "plugins": [
         {
           "name": "vite:load-fallback",
-          "transform": 17
+          "transform": 23
         },
         {
           "name": "vite:resolve",
@@ -682,7 +682,7 @@
         }
       ],
       "virtual": false,
-      "totalTime": 17,
+      "totalTime": 23,
       "invokeCount": 1,
       "sourceSize": 561,
       "distSize": 0
@@ -693,15 +693,15 @@
       "plugins": [
         {
           "name": "vite:load-fallback",
-          "transform": 14
+          "transform": 16
         },
         {
           "name": "vite:resolve",
-          "resolveId": 1
+          "resolveId": 2
         }
       ],
       "virtual": false,
-      "totalTime": 14,
+      "totalTime": 16,
       "invokeCount": 1,
       "sourceSize": 373,
       "distSize": 0
@@ -712,7 +712,7 @@
       "plugins": [
         {
           "name": "vite:load-fallback",
-          "transform": 4
+          "transform": 7
         },
         {
           "name": "vite:resolve",
@@ -720,7 +720,7 @@
         }
       ],
       "virtual": false,
-      "totalTime": 4,
+      "totalTime": 7,
       "invokeCount": 1,
       "sourceSize": 2267,
       "distSize": 0
@@ -735,11 +735,11 @@
         },
         {
           "name": "vite:resolve",
-          "resolveId": 0
+          "resolveId": 1
         },
         {
           "name": "vite:resolve",
-          "resolveId": 0
+          "resolveId": 1
         }
       ],
       "virtual": false,
@@ -754,15 +754,15 @@
       "plugins": [
         {
           "name": "vite:load-fallback",
-          "transform": 6
+          "transform": 8
         },
         {
           "name": "vite:resolve",
-          "resolveId": 1
+          "resolveId": 0
         }
       ],
       "virtual": false,
-      "totalTime": 6,
+      "totalTime": 8,
       "invokeCount": 1,
       "sourceSize": 1382,
       "distSize": 0
@@ -773,7 +773,7 @@
       "plugins": [
         {
           "name": "vite:load-fallback",
-          "transform": 3
+          "transform": 7
         },
         {
           "name": "vite:resolve",
@@ -781,7 +781,7 @@
         }
       ],
       "virtual": false,
-      "totalTime": 3,
+      "totalTime": 7,
       "invokeCount": 1,
       "sourceSize": 151,
       "distSize": 0
@@ -792,7 +792,7 @@
       "plugins": [
         {
           "name": "vite:load-fallback",
-          "transform": 5
+          "transform": 10
         },
         {
           "name": "vite:resolve",
@@ -800,7 +800,7 @@
         }
       ],
       "virtual": false,
-      "totalTime": 5,
+      "totalTime": 10,
       "invokeCount": 1,
       "sourceSize": 1092,
       "distSize": 0
@@ -815,7 +815,7 @@
         },
         {
           "name": "vite:resolve",
-          "resolveId": 1
+          "resolveId": 2
         }
       ],
       "virtual": false,
@@ -830,11 +830,11 @@
       "plugins": [
         {
           "name": "vite:load-fallback",
-          "transform": 16
+          "transform": 15
         },
         {
           "name": "vite:resolve",
-          "resolveId": 2
+          "resolveId": 3
         },
         {
           "name": "vite:resolve",
@@ -842,15 +842,15 @@
         },
         {
           "name": "vite:resolve",
-          "resolveId": 0
+          "resolveId": 1
         },
         {
           "name": "vite:resolve",
-          "resolveId": 0
+          "resolveId": 1
         }
       ],
       "virtual": false,
-      "totalTime": 16,
+      "totalTime": 15,
       "invokeCount": 1,
       "sourceSize": 6044,
       "distSize": 0
@@ -861,7 +861,7 @@
       "plugins": [
         {
           "name": "vite:load-fallback",
-          "transform": 16
+          "transform": 24
         },
         {
           "name": "vite:resolve",
@@ -869,7 +869,7 @@
         }
       ],
       "virtual": false,
-      "totalTime": 16,
+      "totalTime": 24,
       "invokeCount": 1,
       "sourceSize": 548,
       "distSize": 0
@@ -880,15 +880,15 @@
       "plugins": [
         {
           "name": "vite:load-fallback",
-          "transform": 19
+          "transform": 18
         },
         {
           "name": "vite:resolve",
-          "resolveId": 1
+          "resolveId": 0
         }
       ],
       "virtual": false,
-      "totalTime": 19,
+      "totalTime": 18,
       "invokeCount": 1,
       "sourceSize": 2557,
       "distSize": 0
@@ -899,7 +899,7 @@
       "plugins": [
         {
           "name": "vite:load-fallback",
-          "transform": 3
+          "transform": 11
         },
         {
           "name": "vite:resolve",
@@ -907,7 +907,7 @@
         }
       ],
       "virtual": false,
-      "totalTime": 3,
+      "totalTime": 11,
       "invokeCount": 1,
       "sourceSize": 71,
       "distSize": 0
@@ -918,15 +918,15 @@
       "plugins": [
         {
           "name": "vite:load-fallback",
-          "transform": 4
+          "transform": 11
         },
         {
           "name": "vite:resolve",
-          "resolveId": 1
+          "resolveId": 0
         }
       ],
       "virtual": false,
-      "totalTime": 4,
+      "totalTime": 11,
       "invokeCount": 1,
       "sourceSize": 81,
       "distSize": 0
@@ -937,7 +937,7 @@
       "plugins": [
         {
           "name": "vite:load-fallback",
-          "transform": 4
+          "transform": 10
         },
         {
           "name": "vite:resolve",
@@ -945,7 +945,7 @@
         }
       ],
       "virtual": false,
-      "totalTime": 4,
+      "totalTime": 10,
       "invokeCount": 1,
       "sourceSize": 188,
       "distSize": 0
@@ -956,7 +956,7 @@
       "plugins": [
         {
           "name": "vite:load-fallback",
-          "transform": 8
+          "transform": 25
         },
         {
           "name": "vite:resolve",
@@ -964,7 +964,7 @@
         }
       ],
       "virtual": false,
-      "totalTime": 8,
+      "totalTime": 25,
       "invokeCount": 1,
       "sourceSize": 305,
       "distSize": 0
@@ -975,15 +975,15 @@
       "plugins": [
         {
           "name": "vite:load-fallback",
-          "transform": 8
+          "transform": 24
         },
         {
           "name": "vite:resolve",
-          "resolveId": 0
+          "resolveId": 1
         }
       ],
       "virtual": false,
-      "totalTime": 8,
+      "totalTime": 24,
       "invokeCount": 1,
       "sourceSize": 1464,
       "distSize": 0
@@ -994,15 +994,7 @@
       "plugins": [
         {
           "name": "vite:load-fallback",
-          "transform": 18
-        },
-        {
-          "name": "vite:resolve",
-          "resolveId": 0
-        },
-        {
-          "name": "vite:resolve",
-          "resolveId": 0
+          "transform": 23
         },
         {
           "name": "vite:resolve",
@@ -1011,6 +1003,14 @@
         {
           "name": "vite:resolve",
           "resolveId": 1
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 1
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 0
         },
         {
           "name": "vite:resolve",
@@ -1018,7 +1018,7 @@
         }
       ],
       "virtual": false,
-      "totalTime": 18,
+      "totalTime": 23,
       "invokeCount": 1,
       "sourceSize": 130,
       "distSize": 0
@@ -1033,11 +1033,27 @@
         },
         {
           "name": "vite:resolve",
-          "resolveId": 5
+          "resolveId": 6
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 2
         },
         {
           "name": "vite:resolve",
           "resolveId": 1
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 0
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 0
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 0
         },
         {
           "name": "vite:resolve",
@@ -1061,39 +1077,11 @@
         },
         {
           "name": "vite:resolve",
-          "resolveId": 1
-        },
-        {
-          "name": "vite:resolve",
-          "resolveId": 1
-        },
-        {
-          "name": "vite:resolve",
-          "resolveId": 0
-        },
-        {
-          "name": "vite:resolve",
-          "resolveId": 0
-        },
-        {
-          "name": "vite:resolve",
           "resolveId": 2
         },
         {
           "name": "vite:resolve",
-          "resolveId": 0
-        },
-        {
-          "name": "vite:resolve",
-          "resolveId": 0
-        },
-        {
-          "name": "vite:resolve",
-          "resolveId": 0
-        },
-        {
-          "name": "vite:resolve",
-          "resolveId": 3
+          "resolveId": 1
         },
         {
           "name": "vite:resolve",
@@ -1102,6 +1090,18 @@
         {
           "name": "vite:resolve",
           "resolveId": 1
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 4
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 1
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 0
         },
         {
           "name": "vite:resolve",
@@ -1120,15 +1120,15 @@
       "plugins": [
         {
           "name": "vite:load-fallback",
-          "transform": 17
+          "transform": 14
         },
         {
           "name": "vite:css",
-          "transform": 105
+          "transform": 120
         },
         {
           "name": "vite:resolve",
-          "resolveId": 0
+          "resolveId": 1
         },
         {
           "name": "vite:resolve",
@@ -1136,7 +1136,7 @@
         }
       ],
       "virtual": false,
-      "totalTime": 122,
+      "totalTime": 134,
       "invokeCount": 1,
       "sourceSize": 3268,
       "distSize": 0
@@ -1147,15 +1147,15 @@
       "plugins": [
         {
           "name": "vite:load-fallback",
-          "transform": 18
+          "transform": 14
         },
         {
           "name": "vite:css",
-          "transform": 104
+          "transform": 120
         },
         {
           "name": "vite:resolve",
-          "resolveId": 0
+          "resolveId": 1
         },
         {
           "name": "vite:resolve",
@@ -1163,7 +1163,7 @@
         }
       ],
       "virtual": false,
-      "totalTime": 122,
+      "totalTime": 134,
       "invokeCount": 1,
       "sourceSize": 2345,
       "distSize": 0
@@ -1174,15 +1174,15 @@
       "plugins": [
         {
           "name": "vite:load-fallback",
-          "transform": 18
+          "transform": 13
         },
         {
           "name": "vite:css",
-          "transform": 104
+          "transform": 121
         },
         {
           "name": "vite:resolve",
-          "resolveId": 0
+          "resolveId": 1
         },
         {
           "name": "vite:resolve",
@@ -1190,7 +1190,7 @@
         }
       ],
       "virtual": false,
-      "totalTime": 122,
+      "totalTime": 134,
       "invokeCount": 1,
       "sourceSize": 2011,
       "distSize": 0
@@ -1201,38 +1201,11 @@
       "plugins": [
         {
           "name": "vite:load-fallback",
-          "transform": 17
+          "transform": 13
         },
         {
           "name": "vite:css",
-          "transform": 105
-        },
-        {
-          "name": "vite:resolve",
-          "resolveId": 0
-        },
-        {
-          "name": "vite:resolve",
-          "resolveId": 1
-        }
-      ],
-      "virtual": false,
-      "totalTime": 122,
-      "invokeCount": 1,
-      "sourceSize": 1188,
-      "distSize": 0
-    },
-    {
-      "id": "C:/Users/Local/Desktop/TVOI/TVOI_STIL6/src/js/cart.js",
-      "deps": [],
-      "plugins": [
-        {
-          "name": "vite:load-fallback",
-          "transform": 2
-        },
-        {
-          "name": "vite:resolve",
-          "resolveId": 0
+          "transform": 121
         },
         {
           "name": "vite:resolve",
@@ -1244,7 +1217,34 @@
         }
       ],
       "virtual": false,
-      "totalTime": 2,
+      "totalTime": 134,
+      "invokeCount": 1,
+      "sourceSize": 1188,
+      "distSize": 0
+    },
+    {
+      "id": "C:/Users/Local/Desktop/TVOI/TVOI_STIL6/src/js/cart.js",
+      "deps": [],
+      "plugins": [
+        {
+          "name": "vite:load-fallback",
+          "transform": 1
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 0
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 1
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 1
+        }
+      ],
+      "virtual": false,
+      "totalTime": 1,
       "invokeCount": 1,
       "sourceSize": 5218,
       "distSize": 0
@@ -1255,7 +1255,7 @@
       "plugins": [
         {
           "name": "vite:load-fallback",
-          "transform": 9
+          "transform": 5
         },
         {
           "name": "vite:resolve",
@@ -1263,7 +1263,7 @@
         }
       ],
       "virtual": false,
-      "totalTime": 9,
+      "totalTime": 5,
       "invokeCount": 1,
       "sourceSize": 5172,
       "distSize": 0
@@ -1274,11 +1274,11 @@
       "plugins": [
         {
           "name": "vite:load-fallback",
-          "transform": 10
+          "transform": 13
         },
         {
           "name": "vite:resolve",
-          "resolveId": 0
+          "resolveId": 1
         },
         {
           "name": "vite:resolve",
@@ -1286,7 +1286,7 @@
         }
       ],
       "virtual": false,
-      "totalTime": 10,
+      "totalTime": 13,
       "invokeCount": 1,
       "sourceSize": 778,
       "distSize": 0
@@ -1297,7 +1297,7 @@
       "plugins": [
         {
           "name": "vite:load-fallback",
-          "transform": 8
+          "transform": 6
         },
         {
           "name": "vite:resolve",
@@ -1305,7 +1305,7 @@
         }
       ],
       "virtual": false,
-      "totalTime": 8,
+      "totalTime": 6,
       "invokeCount": 1,
       "sourceSize": 2216,
       "distSize": 0
@@ -1316,15 +1316,15 @@
       "plugins": [
         {
           "name": "vite:load-fallback",
-          "transform": 2
+          "transform": 3
         },
         {
           "name": "vite:css",
-          "transform": 132
+          "transform": 152
         },
         {
           "name": "vite:resolve",
-          "resolveId": 1
+          "resolveId": 2
         },
         {
           "name": "vite:resolve",
@@ -1332,7 +1332,7 @@
         }
       ],
       "virtual": false,
-      "totalTime": 134,
+      "totalTime": 155,
       "invokeCount": 1,
       "sourceSize": 513,
       "distSize": 0
@@ -1343,23 +1343,23 @@
       "plugins": [
         {
           "name": "vite:load-fallback",
-          "transform": 17
+          "transform": 15
         },
         {
           "name": "vite:css",
-          "transform": 105
+          "transform": 120
         },
         {
           "name": "vite:resolve",
-          "resolveId": 1
+          "resolveId": 3
         },
         {
           "name": "vite:resolve",
-          "resolveId": 1
+          "resolveId": 2
         }
       ],
       "virtual": false,
-      "totalTime": 122,
+      "totalTime": 135,
       "invokeCount": 1,
       "sourceSize": 2439,
       "distSize": 0
@@ -1370,11 +1370,11 @@
       "plugins": [
         {
           "name": "vite:load-fallback",
-          "transform": 1
+          "transform": 4
         },
         {
           "name": "vite:css",
-          "transform": 133
+          "transform": 151
         },
         {
           "name": "vite:resolve",
@@ -1390,11 +1390,11 @@
         },
         {
           "name": "vite:resolve",
-          "resolveId": 1
+          "resolveId": 2
         }
       ],
       "virtual": false,
-      "totalTime": 134,
+      "totalTime": 155,
       "invokeCount": 1,
       "sourceSize": 3421,
       "distSize": 0

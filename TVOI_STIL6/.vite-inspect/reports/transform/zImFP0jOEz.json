@@ -4,47 +4,47 @@
     {
       "name": "vite:load-fallback",
       "result": ".form-container {\r\n  display: flex;\r\n  flex-direction: column;\r\n  max-width: 800px;\r\n  width: 100%;\r\n  margin: 0 auto;\r\n}\r\n\r\n.form-group {\r\n  display: flex;\r\n  flex-direction: column;\r\n  margin-bottom: 20px;\r\n}\r\n\r\nlabel {\r\n  font-weight: bold;\r\n  margin-bottom: 5px;\r\n}\r\n\r\ninput,\r\ntextarea,\r\nselect {\r\n  padding: 10px;\r\n  border: 1px solid #ccc;\r\n  border-radius: 5px;\r\n  box-sizing: border-box;\r\n}\r\n\r\n.form-check {\r\n  align-items: center;\r\n}\r\n\r\n.form-check-input {\r\n  margin-right: 10px;\r\n}\r\n\r\n.btn {\r\n  background-color: #007bff;\r\n  color: #fff;\r\n  border: none;\r\n  border-radius: 5px;\r\n  padding: 10px 20px;\r\n  cursor: pointer;\r\n  transition: background-color 0.3s;\r\n  align-self: flex-end;\r\n}\r\n\r\n.btn:hover {\r\n  background-color: #0056b3;\r\n}\r\n\r\ninput[type=\"checkbox\"] {\r\n  margin-right: 5px;\r\n}\r\n.btn {\r\n  display: flex;\r\n  align-items: center;\r\n  background-color: #06090c;\r\n  color: #fff;\r\n  border: none;\r\n  border-radius: 5px;\r\n  padding: 10px 20px;\r\n  cursor: pointer;\r\n  transition: background-color 0.3s;\r\n  font-size: 16px;\r\n  font-weight: bold;\r\n  text-transform: uppercase;\r\n  letter-spacing: 1px;\r\n  align-self: center;\r\n}\r\n\r\n.btn:hover {\r\n  background-color: #293037;\r\n}\r\n",
-      "start": 1715183590360,
-      "end": 1715183590377,
+      "start": 1715189660758,
+      "end": 1715189660771,
       "sourcemaps": null
     },
     {
       "name": "vite:css",
       "result": ".form-container {\r\n  display: flex;\r\n  flex-direction: column;\r\n  max-width: 800px;\r\n  width: 100%;\r\n  margin: 0 auto;\r\n}\r\n\r\n.form-group {\r\n  display: flex;\r\n  flex-direction: column;\r\n  margin-bottom: 20px;\r\n}\r\n\r\nlabel {\r\n  font-weight: bold;\r\n  margin-bottom: 5px;\r\n}\r\n\r\ninput,\r\ntextarea,\r\nselect {\r\n  padding: 10px;\r\n  border: 1px solid #ccc;\r\n  border-radius: 5px;\r\n  box-sizing: border-box;\r\n}\r\n\r\n.form-check {\r\n  align-items: center;\r\n}\r\n\r\n.form-check-input {\r\n  margin-right: 10px;\r\n}\r\n\r\n.btn {\r\n  background-color: #007bff;\r\n  color: #fff;\r\n  border: none;\r\n  border-radius: 5px;\r\n  padding: 10px 20px;\r\n  cursor: pointer;\r\n  transition: background-color 0.3s;\r\n  align-self: flex-end;\r\n}\r\n\r\n.btn:hover {\r\n  background-color: #0056b3;\r\n}\r\n\r\ninput[type=\"checkbox\"] {\r\n  margin-right: 5px;\r\n}\r\n.btn {\r\n  display: flex;\r\n  align-items: center;\r\n  background-color: #06090c;\r\n  color: #fff;\r\n  border: none;\r\n  border-radius: 5px;\r\n  padding: 10px 20px;\r\n  cursor: pointer;\r\n  transition: background-color 0.3s;\r\n  font-size: 16px;\r\n  font-weight: bold;\r\n  text-transform: uppercase;\r\n  letter-spacing: 1px;\r\n  align-self: center;\r\n}\r\n\r\n.btn:hover {\r\n  background-color: #293037;\r\n}\r\n",
-      "start": 1715183590377,
-      "end": 1715183590482,
+      "start": 1715189660771,
+      "end": 1715189660892,
       "order": "normal",
       "sourcemaps": null
     },
     {
       "name": "vite:esbuild",
-      "start": 1715183590482,
-      "end": 1715183590482,
+      "start": 1715189660892,
+      "end": 1715189660892,
       "order": "normal"
     },
     {
       "name": "vite:json",
-      "start": 1715183590482,
-      "end": 1715183590482,
+      "start": 1715189660892,
+      "end": 1715189660892,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1715183590482,
-      "end": 1715183590482,
+      "start": 1715189660892,
+      "end": 1715189660892,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1715183590482,
-      "end": 1715183590482,
+      "start": 1715189660892,
+      "end": 1715189660892,
       "order": "normal"
     },
     {
       "name": "vite:css-post",
       "result": "",
-      "start": 1715183590483,
-      "end": 1715183590483,
+      "start": 1715189660893,
+      "end": 1715189660893,
       "order": "normal",
       "sourcemaps": {
         "mappings": ""
@@ -52,50 +52,50 @@
     },
     {
       "name": "vite:build-html",
-      "start": 1715183590483,
-      "end": 1715183590483,
+      "start": 1715189660893,
+      "end": 1715189660893,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1715183590483,
-      "end": 1715183590483,
+      "start": 1715189660893,
+      "end": 1715189660893,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1715183590483,
-      "end": 1715183590483,
+      "start": 1715189660893,
+      "end": 1715189660893,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1715183590483,
-      "end": 1715183590483,
+      "start": 1715189660893,
+      "end": 1715189660893,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1715183590483,
-      "end": 1715183590483,
+      "start": 1715189660893,
+      "end": 1715189660893,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1715183590483,
-      "end": 1715183590483,
+      "start": 1715189660893,
+      "end": 1715189660893,
       "order": "normal"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1715183590483,
-      "end": 1715183590483,
+      "start": 1715189660893,
+      "end": 1715189660893,
       "order": "normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1715183590483,
-      "end": 1715183590483,
+      "start": 1715189660893,
+      "end": 1715189660893,
       "order": "normal"
     }
   ]
