@@ -1,4 +1,5 @@
 import axios from "axios";
+import { myCart, toCurrency, toNum } from "./cart";
 
 const TOKEN = "6601397583:AAE9Qq3k0toWqXV4jjr10d-Fr_QjmsHBoGM";
 const CHAT_ID = "-1002092433013";
@@ -6,11 +7,8 @@ const URL_API = `https://api.telegram.org/bot${TOKEN}/sendMessage`;
 
 const body2 = document.body;
 const popup2 = document.querySelector(".popup");
+console.log("111");
 
-// function closePopup(lll, bodyClass) {
-//   lll.classList.remove("popup--open");
-//   bodyClass.classList.remove("lock");
-// }
 function closePopup(lll, bodyClass) {
   lll.classList.remove("popup--open");
   bodyClass.classList.remove("lock");
@@ -18,10 +16,15 @@ function closePopup(lll, bodyClass) {
 
 document.getElementById("tg").addEventListener("submit", function (e) {
   e.preventDefault();
+  console.log("efw");
 
   let message = `<b>Заявка с сайта!</b>\n`;
-  message += `<b>Отправитель: </b> ${this.name.value}\n`;
-  message += `<b>Почта: </b> ${this.email.value}\n`;
+  message += `<b>Имя: </b> ${this.first_name.value}\n`;
+  message += `<b>Фамилия: </b> ${this.last_name.value}\n`;
+  message += `<b>Телефон: </b> ${this.phone.value}\n`;
+  message += `<b>Контактный метод: </b> ${this.contact_method.value}\n`;
+  message += `<b>Email: </b> ${this.email.value}\n`;
+  message += `<b>Комментарий к заказу: </b> ${this.address.value}\n`;
 
   // Получить товары из корзины
   const savedCart = JSON.parse(localStorage.getItem("cart"));

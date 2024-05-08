@@ -5,6 +5,12 @@ import "/src/cs.css";
 import "/src/cart.css";
 import "/src/contact.css";
 
+import { hideLoader } from "./loader.js";
+
+window.addEventListener("load", function () {
+  hideLoader(); // Вызов функции hideLoader() после полной загрузки страницы
+});
+
 // Утилиты
 
 function toNum(str) {
@@ -171,4 +177,4 @@ window.onclick = function (event) {
   }
 };
 
-export { Product, myCart, cartNum };
+export { Product, myCart, cartNum, toCurrency, toNum };

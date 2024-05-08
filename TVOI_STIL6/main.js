@@ -4,6 +4,3 @@ import "./src/form.css";
 import "./src/cs.css";
 import "./src/cart.css";
 import "./src/contact.css";
-
-// import "./src/js/cart";
-import "./src/js/js";

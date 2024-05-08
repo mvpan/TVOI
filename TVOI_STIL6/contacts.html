@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contacts</title>
 
+    <link rel="stylesheet" href="./src/load.css">
+    <link rel="stylesheet" href="./src/style.css" />
     
   </head>
   <body>
@@ -22,14 +24,14 @@
             <a
               href="/cloth.html"
               class="header__links__item__btn header__links__item__btn--favorites"
-              >Одежда</a
+              >Верхняя одежда</a
             >
           </li>
           <li class="header__links__item">
             <a
-              href="/index.html"
+              href="./index.html"
               class="header__links__item__btn header__links__item__btn--compare"
-              >Обувь</a
+              >Штаны</a
             >
           </li>
           <li class="header__links__item">
@@ -55,58 +57,11 @@
         </div>
       </div>
     </header>
-    <main class="contact">
-      <div class="container contact__container">
-        <div class="left-side">
-          <div class="address details">
-            <i class="fas fa-map-marker-alt"></i>
-            <div class="topic">Адрес</div>
-            <div class="text-one">г. Москва</div>
-            <div class="text-two">Пресненская наб., 8 стр. 1</div>
-          </div>
-          <div class="phone details">
-            <i class="fas fa-phone-alt"></i>
-            <div class="topic">Телефон</div>
-            <div class="text-one">8-800-000-00-00</div>
-          </div>
-          <div class="email details">
-            <i class="fas fa-envelope"></i>
-            <div class="topic">Email</div>
-            <div class="text-one">support@site.com</div>
-          </div>
-        </div>
-        <div class="right-side">
-          <div class="topic-text">Отправьте нам сообщение</div>
-          <p>
-            Если у вас есть какие-то вопросы или предложения по сотрудничеству -
-            заполните форму ниже
-          </p>
-          <form id="tg" class="form" >
-            <div class="input-box">
-              <input type="text" placeholder="Ваше имя" />
-            </div>
-            <div class="input-box">
-              <input type="text" placeholder="Введите email" />
-            </div>
-            <div class="input-box">
-              <input type="text" placeholder="Введите телефон" />
-            </div>
-            <div class="input-box message-box">
-              <textarea placeholder="Сообщение"></textarea>
-            </div>
-            <div class="button">
-              <input type="button" value="Отправить" />
-            </div>
-          </form>
-        </div>
-        </div>
-        <!-- <script
-          type="text/javascript"
-          charset="utf-8"
-          async
-          src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Acf9e73c6a55ad8649e1be3cb946bc121511d1aaaac5259ef14d931b367a9b2b2&amp;width=598&amp;height=400&amp;lang=ru_RU&amp;scroll=true"
-        ></script> -->
+    <main class="main">
+      <div class="loader">
+        <div class="spinner"></div>
       </div>
+      <h1 class="mm" style="text-align: center">Связаться с нами</h1>
       <div class="popup" id="popup">
         <div class="popup__container" id="popup_container">
           <div class="popup__item">
@@ -158,58 +113,125 @@
                   <label for="address">Комментарий к заказу:</label>
                   <input type="text" id="address" name="address" required />
                 </div>
-                <!-- <div class="form-group">
-                  <input
-                    type="checkbox"
-                    id="agree_terms"
-                    name="agree_terms"
-                    required
-                  />
-                  <label for="agree_terms"
-                    >Я согласен с условиями политики конфиденциальности</label
-                  >
-                </div> -->
                 <button type="submit" class="btn">Отправить</button>
               </form>
             </div>
           </div>
         </div>
       </div>
+      <div class="container contact__container">
+        <div class="left-side">
+          <div class="address details">
+            <i class="fas fa-map-marker-alt"></i>
+            <div class="topic">Адрес</div>
+            <div class="text-one">г. Москва</div>
+            <div class="text-two">Пресненская наб., 8 стр. 1</div>
+          </div>
+          <div class="phone details">
+            <i class="fas fa-phone-alt"></i>
+            <div class="topic">Телефон</div>
+            <div class="text-one">8-800-000-00-00</div>
+          </div>
+          <div class="email details">
+            <i class="fas fa-envelope"></i>
+            <div class="topic">Email</div>
+            <div class="text-one">support@site.com</div>
+          </div>
+        </div>
+        <div class="right-side">
+          <div class="topic-text">Отправьте нам сообщение</div>
+          <p>
+            Если у вас есть какие-то вопросы или предложения по сотрудничеству -
+            заполните форму ниже
+          </p>
+          <form id="tg" class="form" >
+            <div class="input-box">
+              <input type="text" placeholder="Ваше имя" />
+            </div>
+            <div class="input-box">
+              <input type="text" placeholder="Введите email" />
+            </div>
+            <div class="input-box">
+              <input type="text" placeholder="Введите телефон" />
+            </div>
+            <div class="input-box message-box">
+              <textarea placeholder="Сообщение"></textarea>
+            </div>
+            <div class="button">
+              <input type="button" value="Отправить" />
+            </div>
+          </form>
+        </div>
+        </div>
+        <!-- <script
+          type="text/javascript"
+          charset="utf-8"
+          async
+          src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Acf9e73c6a55ad8649e1be3cb946bc121511d1aaaac5259ef14d931b367a9b2b2&amp;width=598&amp;height=400&amp;lang=ru_RU&amp;scroll=true"
+        ></script> -->
+      </div>
+      
     </main>
     <footer class="footer">
       <div class="container">
         <div class="footer__top">
           <div class="footer__logo">
-            <a href="">Logo</a>
+            <a href="">TVOI_STIL6</a>
           </div>
           <div class="footer__faq">
             <h4>ПОДДЕРЖКА</h4>
-            <a href="">Доставка</a>
-            <a href="">Гарантия качества</a>
-            <a href="">Оплата и возврат</a>
+            <a
+              href=""
+              class="header__links__item__btn header__links__item__btn--favorites"
+              >Доставка</a
+            >
+            <a
+              href=""
+              class="header__links__item__btn header__links__item__btn--favorites"
+              >Гарантия качества</a
+            >
+            <a
+              href=""
+              class="header__links__item__btn header__links__item__btn--favorites"
+              >Оплата и возврат</a
+            >
           </div>
           <div class="footer__catalog">
             <h4>КАТАЛОГ</h4>
-            <a href="">Футболки</a>
-            <a href="">Толстовки</a>
-            <a href="">Аксесуары</a>
+            <a
+              href=""
+              class="header__links__item__btn header__links__item__btn--favorites"
+              >Футболки</a
+            >
+            <a
+              href=""
+              class="header__links__item__btn header__links__item__btn--favorites"
+              >Толстовки</a
+            >
+            <a
+              href=""
+              class="header__links__item__btn header__links__item__btn--favorites"
+              >Аксесуары</a
+            >
           </div>
           <div class="footer__socials">
-            <h4>КАТАЛОГ</h4>
-            <a href="">Футболки</a>
-            <a href="">Толстовки</a>
+            <h4>Социальные сети</h4>
+            <a href="">Телегра</a>
+            <a href="">Вк</a>
             <a href="">Аксесуары</a>
           </div>
         </div>
         <div class="footer__bottom">
-          <p>© 2017-2023 Street Republic Все права защищены</p>
-          <p>Политика обработки данных</p>
-          <p>Политика конфиденциальности</p>
+          <div>© 2017-2023 Street Republic Все права защищены</div>
+          <div class="footer__bottom--policy">
+            <p>Политика обработки данных</p>
+            <p>Политика конфиденциальности</p>
+          </div>
         </div>
       </div>
     </footer>
-    <!-- <script type="module" src="main.js"></script> -->
+    <script type="module" src="main.js"></script>
     <script type="module" src="./src/js/cart.js"></script>
-    <!-- <script src="./src/js/tg_form.js"></script> -->
+    <script type="module" src="./src/js/tg_form.js"></script>
   </body>
 </html>

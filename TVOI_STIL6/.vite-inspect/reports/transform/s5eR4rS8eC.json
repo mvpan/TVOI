@@ -1,0 +1,96 @@
+{
+  "resolvedId": "C:/Users/Local/Desktop/TVOI/TVOI_STIL6/src/js/tg_form.js",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "import axios from \"axios\";\r\nimport { myCart, toCurrency, toNum } from \"./cart\";\r\n\r\nconst TOKEN = \"6601397583:AAE9Qq3k0toWqXV4jjr10d-Fr_QjmsHBoGM\";\r\nconst CHAT_ID = \"-1002092433013\";\r\nconst URL_API = `https://api.telegram.org/bot${TOKEN}/sendMessage`;\r\n\r\nconst body2 = document.body;\r\nconst popup2 = document.querySelector(\".popup\");\r\nconsole.log(\"111\");\r\n\r\nfunction closePopup(lll, bodyClass) {\r\n  lll.classList.remove(\"popup--open\");\r\n  bodyClass.classList.remove(\"lock\");\r\n}\r\n\r\ndocument.getElementById(\"tg\").addEventListener(\"submit\", function (e) {\r\n  e.preventDefault();\r\n  console.log(\"efw\");\r\n\r\n  let message = `<b>Заявка с сайта!</b>\\n`;\r\n  message += `<b>Имя: </b> ${this.first_name.value}\\n`;\r\n  message += `<b>Фамилия: </b> ${this.last_name.value}\\n`;\r\n  message += `<b>Телефон: </b> ${this.phone.value}\\n`;\r\n  message += `<b>Контактный метод: </b> ${this.contact_method.value}\\n`;\r\n  message += `<b>Email: </b> ${this.email.value}\\n`;\r\n  message += `<b>Комментарий к заказу: </b> ${this.address.value}\\n`;\r\n\r\n  // Получить товары из корзины\r\n  const savedCart = JSON.parse(localStorage.getItem(\"cart\"));\r\n  const products = savedCart.products;\r\n\r\n  // Добавить товары в сообщение\r\n  if (products.length > 0) {\r\n    message += \"<b>Товары в корзине:</b>\\n\";\r\n    products.forEach((product, index) => {\r\n      message += `<b>${index + 1}. </b>${product.name} - ${toCurrency(\r\n        toNum(product.price)\r\n      )}\\n`;\r\n    });\r\n    message += `<b>Итого: </b> ${toCurrency(myCart.cost)}\\n`;\r\n  } else {\r\n    message += \"<b>Товары в корзине:</b> Пусто\\n\";\r\n  }\r\n\r\n  axios\r\n    .post(URL_API, {\r\n      chat_id: CHAT_ID,\r\n      parse_mode: \"html\",\r\n      text: message,\r\n    })\r\n    .then(() => {\r\n      localStorage.removeItem(\"cart\");\r\n      console.log(\"Данные корзины удалены из localStorage.\");\r\n\r\n      const cartNum = document.querySelector(\"#cart_num\");\r\n      cartNum.textContent = 0;\r\n\r\n      closePopup(popup2, body2);\r\n\r\n      // location.reload();\r\n    })\r\n    .catch(function (error) {\r\n      console.log(error);\r\n    });\r\n});\r\n",
+      "start": 1715183590348,
+      "end": 1715183590356,
+      "sourcemaps": null
+    },
+    {
+      "name": "vite:css",
+      "start": 1715183590356,
+      "end": 1715183590356,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1715183590356,
+      "end": 1715183590356,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1715183590356,
+      "end": 1715183590356,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1715183590356,
+      "end": 1715183590356,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1715183590356,
+      "end": 1715183590356,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1715183590356,
+      "end": 1715183590356,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1715183590356,
+      "end": 1715183590356,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1715183590356,
+      "end": 1715183590356,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1715183590356,
+      "end": 1715183590356,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1715183590356,
+      "end": 1715183590356,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1715183590356,
+      "end": 1715183590356,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1715183590356,
+      "end": 1715183590356,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1715183590356,
+      "end": 1715183590357,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1715183590357,
+      "end": 1715183590357,
+      "order": "normal"
+    }
+  ]
+}

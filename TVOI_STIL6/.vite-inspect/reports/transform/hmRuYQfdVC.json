@@ -3,93 +3,93 @@
   "transforms": [
     {
       "name": "vite:load-fallback",
-      "result": "import axios from \"axios\";\r\nimport { myCart, cartNum, Product } from \"./cart\";\r\n\r\nconst productsContaine = document.getElementById(\"productsContainer\");\r\nconst bodyModal = document.body;\r\nconst URL = \"http://localhost:8080\";\r\nconst h1Element = document.querySelector(\"h1.mm\");\r\nconst idEl = h1Element.id;\r\n\r\naxios\r\n  .get(`${URL}/api/catalog/${idEl}`)\r\n  .then((response) => {\r\n    const bd = response.data;\r\n\r\n    // Пройти по каждому объекту в массиве `bd` и создать элементы для каждого продукта\r\n    bd.forEach((product) => {\r\n      // Создать элемент для продукта\r\n      const productElement = document.createElement(\"div\");\r\n      productElement.setAttribute(\"data-id\", `${product.id}`);\r\n      productElement.classList.add(\"main__item\");\r\n      productElement.classList.add(\"item\");\r\n\r\n      // Создать HTML-разметку продукта с данными из объекта `product`\r\n      productElement.innerHTML = `\r\n      <div class=\"main__card\" data-id=${product.id}>\r\n        <img src=\"${URL}/${product.art}/${product.img_urls[0]}\" alt=\"${product.name}\" class=\"main__item--image item__img\" />\r\n        <div class=\"main__item--text\">\r\n          <p class=\"card__title title\">${product.name}</p>\r\n          <h4 class=\"card__price price\">${product.price}</h4>\r\n          <p><strong>Бренд:</strong> ${product.mater}</p>\r\n          <p><strong>Цвет:</strong> ${product.color}</p>\r\n          <p><strong>Артикул:</strong> ${product.art}</p>\r\n          <p><strong>Описание:</strong> ${product.text}</p>\r\n        </div>\r\n        </div>\r\n        <button class=\"card__add\">В корзину</button>\r\n      \r\n      `;\r\n\r\n      // Добавить созданный элемент продукта в контейнер\r\n      productsContaine.appendChild(productElement);\r\n    });\r\n\r\n    const cardAddArr = Array.from(document.querySelectorAll(\".card__add\"));\r\n    const savedCart = JSON.parse(localStorage.getItem(\"cart\"));\r\n    myCart.products = savedCart.products;\r\n    cartNum.textContent = myCart.count;\r\n    myCart.products = cardAddArr.forEach((cardAdd) => {\r\n      cardAdd.addEventListener(\"click\", (e) => {\r\n        e.preventDefault();\r\n        const card = e.target.closest(\".item\");\r\n        const product = new Product(card);\r\n        const savedCart = JSON.parse(localStorage.getItem(\"cart\"));\r\n        myCart.products = savedCart.products;\r\n        myCart.addProduct(product);\r\n        localStorage.setItem(\"cart\", JSON.stringify(myCart));\r\n        cartNum.textContent = myCart.count;\r\n      });\r\n    });\r\n\r\n    // Находим все блоки с классом main__item\r\n    const mainItems = document.querySelectorAll(\".main__card\");\r\n\r\n    // Добавляем обработчик события клика на каждый блок main__item\r\n    mainItems.forEach((item) => {\r\n      item.addEventListener(\"click\", () => {\r\n        const itemId = parseInt(item.getAttribute(\"data-id\"));\r\n        openModal(itemId);\r\n      });\r\n    });\r\n  })\r\n  .catch((error) => {\r\n    console.error(error);\r\n  });\r\n// Функция для открытия модального окна по id\r\nfunction openModal(id) {\r\n  // Получить данные о продукте из базы данных на сервере\r\n  axios\r\n    .get(`${URL}/api/product/${id} `)\r\n    .then((response) => {\r\n      const product = response.data;\r\n      const modal = document.getElementById(\"myModal\");\r\n      const modalImg = document.getElementById(\"modalImg\");\r\n      const modalName = document.getElementById(\"modalName\");\r\n      const modalBrand = document.getElementById(\"modalBrand\");\r\n      const modalPrice = document.getElementById(\"modalPrice\");\r\n      const modalAtribut = document.getElementById(\"modalAtribut\");\r\n\r\n      // Заполнить модальное окно данными из найденного продукта\r\n      modalImg.src = ` http://localhost:8080/${product.art}/${product.img_urls[0]}`;\r\n      modalImg.alt = product.name;\r\n      modalName.textContent = product.name;\r\n      modalPrice.textContent = product.price;\r\n\r\n      modalBrand.textContent = `Материал: ${product.mater}`;\r\n      modalAtribut.textContent = `Артикул: ${product.art}`;\r\n\r\n      modal.style.display = \"block\"; // Отобразить модальное окно\r\n      bodyModal.classList.add(\"lock\");\r\n    })\r\n    .catch((error) => {\r\n      console.error(error);\r\n    });\r\n}\r\nconst closeModalBtn = document.querySelector(\".close\");\r\nconsole.log(closeModalBtn);\r\ncloseModalBtn.addEventListener(\"click\", closeModal);\r\n\r\n// Функция для закрытия модального окна по id\r\nfunction closeModal() {\r\n  const modal = document.getElementById(\"myModal\");\r\n  console.log(modal);\r\n  modal.style.display = \"none\";\r\n  bodyModal.classList.remove(\"lock\");\r\n}\r\n",
-      "start": 1715171819709,
-      "end": 1715171819711,
+      "result": "import axios from \"axios\";\r\nimport { myCart, cartNum, Product } from \"./cart\";\r\n\r\nconst productsContaine = document.getElementById(\"productsContainer\");\r\nconst bodyModal = document.body;\r\nconst URL = \"http://localhost:8080\";\r\nconst h1Element = document.querySelector(\"h1.mm\");\r\nconst idEl = h1Element.id;\r\n\r\nimport { hideLoader } from \"./loader.js\";\r\n\r\nwindow.addEventListener(\"load\", function () {\r\n  hideLoader(); // Вызов функции hideLoader() после полной загрузки страницы\r\n});\r\n\r\naxios\r\n  .get(`${URL}/api/catalog/${idEl}`)\r\n  .then((response) => {\r\n    const bd = response.data;\r\n\r\n    // Пройти по каждому объекту в массиве `bd` и создать элементы для каждого продукта\r\n    bd.forEach((product) => {\r\n      // Создать элемент для продукта\r\n      const productElement = document.createElement(\"div\");\r\n      productElement.setAttribute(\"data-id\", `${product.id}`);\r\n      productElement.classList.add(\"main__item\");\r\n      productElement.classList.add(\"item\");\r\n\r\n      // Создать HTML-разметку продукта с данными из объекта `product`\r\n      productElement.innerHTML = `\r\n      <div class=\"main__card\" data-id=${product.id}>\r\n        <img fetchpriority=\"high\" src=\"${URL}/${product.art}/${product.img_urls[0]}\" alt=\"${product.name} \"width=\"300px\" hight=\"300px\" class=\"main__item--image item__img\" />\r\n        <div class=\"main__item--text\">\r\n          <p class=\"card__title title\">${product.name}</p>\r\n          <h4 class=\"card__price price\">${product.price}</h4>\r\n          <p><strong>Бренд:</strong> ${product.mater}</p>\r\n          <p><strong>Цвет:</strong> ${product.color}</p>\r\n          <p><strong>Артикул:</strong> ${product.art}</p>\r\n          <p><strong>Описание:</strong> ${product.text}</p>\r\n        </div>\r\n        </div>\r\n        <button class=\"card__add\">В корзину</button>\r\n      \r\n      `;\r\n\r\n      // Добавить созданный элемент продукта в контейнер\r\n      productsContaine.appendChild(productElement);\r\n    });\r\n\r\n    const cardAddArr = Array.from(document.querySelectorAll(\".card__add\"));\r\n    const savedCart = JSON.parse(localStorage.getItem(\"cart\"));\r\n    myCart.products = savedCart.products;\r\n    cartNum.textContent = myCart.count;\r\n    myCart.products = cardAddArr.forEach((cardAdd) => {\r\n      cardAdd.addEventListener(\"click\", (e) => {\r\n        e.preventDefault();\r\n        const card = e.target.closest(\".item\");\r\n        const product = new Product(card);\r\n        const savedCart = JSON.parse(localStorage.getItem(\"cart\"));\r\n        myCart.products = savedCart.products;\r\n        myCart.addProduct(product);\r\n        localStorage.setItem(\"cart\", JSON.stringify(myCart));\r\n        cartNum.textContent = myCart.count;\r\n      });\r\n    });\r\n\r\n    // Находим все блоки с классом main__item\r\n    const mainItems = document.querySelectorAll(\".main__card\");\r\n\r\n    // Добавляем обработчик события клика на каждый блок main__item\r\n    mainItems.forEach((item) => {\r\n      item.addEventListener(\"click\", () => {\r\n        const itemId = parseInt(item.getAttribute(\"data-id\"));\r\n        openModal(itemId);\r\n      });\r\n    });\r\n  })\r\n  .catch((error) => {\r\n    console.error(error);\r\n  });\r\n// Функция для открытия модального окна по id\r\nfunction openModal(id) {\r\n  // Получить данные о продукте из базы данных на сервере\r\n  axios\r\n    .get(`${URL}/api/product/${id} `)\r\n    .then((response) => {\r\n      const product = response.data;\r\n      const modal = document.getElementById(\"myModal\");\r\n      const modalImg = document.getElementById(\"modalImg\");\r\n      const modalName = document.getElementById(\"modalName\");\r\n      const modalBrand = document.getElementById(\"modalBrand\");\r\n      const modalPrice = document.getElementById(\"modalPrice\");\r\n      const modalAtribut = document.getElementById(\"modalAtribut\");\r\n\r\n      // Заполнить модальное окно данными из найденного продукта\r\n      modalImg.src = ` http://localhost:8080/${product.art}/${product.img_urls[0]}`;\r\n      modalImg.alt = product.name;\r\n      modalName.textContent = product.name;\r\n      modalPrice.textContent = product.price;\r\n\r\n      modalBrand.textContent = `Материал: ${product.mater}`;\r\n      modalAtribut.textContent = `Артикул: ${product.art}`;\r\n\r\n      modal.style.display = \"block\"; // Отобразить модальное окно\r\n      bodyModal.classList.add(\"lock\");\r\n    })\r\n    .catch((error) => {\r\n      console.error(error);\r\n    });\r\n}\r\nconst closeModalBtn = document.querySelector(\".close\");\r\n\r\ncloseModalBtn.addEventListener(\"click\", closeModal);\r\n\r\n// Функция для закрытия модального окна по id\r\nfunction closeModal() {\r\n  const modal = document.getElementById(\"myModal\");\r\n  console.log(modal);\r\n  modal.style.display = \"none\";\r\n  bodyModal.classList.remove(\"lock\");\r\n}\r\n",
+      "start": 1715183590348,
+      "end": 1715183590357,
       "sourcemaps": null
     },
     {
       "name": "vite:css",
-      "start": 1715171819711,
-      "end": 1715171819711,
+      "start": 1715183590357,
+      "end": 1715183590357,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
-      "start": 1715171819711,
-      "end": 1715171819711,
+      "start": 1715183590357,
+      "end": 1715183590357,
       "order": "normal"
     },
     {
       "name": "vite:json",
-      "start": 1715171819711,
-      "end": 1715171819711,
+      "start": 1715183590357,
+      "end": 1715183590357,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1715171819711,
-      "end": 1715171819711,
+      "start": 1715183590357,
+      "end": 1715183590357,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1715171819711,
-      "end": 1715171819711,
+      "start": 1715183590357,
+      "end": 1715183590357,
       "order": "normal"
     },
     {
       "name": "vite:css-post",
-      "start": 1715171819711,
-      "end": 1715171819711,
+      "start": 1715183590357,
+      "end": 1715183590357,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1715171819711,
-      "end": 1715171819711,
+      "start": 1715183590357,
+      "end": 1715183590357,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1715171819711,
-      "end": 1715171819711,
+      "start": 1715183590357,
+      "end": 1715183590357,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1715171819711,
-      "end": 1715171819711,
+      "start": 1715183590357,
+      "end": 1715183590357,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1715171819711,
-      "end": 1715171819711,
+      "start": 1715183590357,
+      "end": 1715183590357,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1715171819711,
-      "end": 1715171819711,
+      "start": 1715183590357,
+      "end": 1715183590357,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1715171819711,
-      "end": 1715171819711,
+      "start": 1715183590357,
+      "end": 1715183590357,
       "order": "normal"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1715171819711,
-      "end": 1715171819712,
+      "start": 1715183590357,
+      "end": 1715183590357,
       "order": "normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1715171819712,
-      "end": 1715171819712,
+      "start": 1715183590357,
+      "end": 1715183590357,
       "order": "normal"
     }
   ]

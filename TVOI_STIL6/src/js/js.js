@@ -7,6 +7,12 @@ const URL = "http://localhost:8080";
 const h1Element = document.querySelector("h1.mm");
 const idEl = h1Element.id;
 
+import { hideLoader } from "./loader.js";
+
+window.addEventListener("load", function () {
+  hideLoader(); // Вызов функции hideLoader() после полной загрузки страницы
+});
+
 axios
   .get(`${URL}/api/catalog/${idEl}`)
   .then((response) => {
@@ -23,7 +29,7 @@ axios
       // Создать HTML-разметку продукта с данными из объекта `product`
       productElement.innerHTML = `
       <div class="main__card" data-id=${product.id}>
-        <img src="${URL}/${product.art}/${product.img_urls[0]}" alt="${product.name}" class="main__item--image item__img" />
+        <img fetchpriority="high" src="${URL}/${product.art}/${product.img_urls[0]}" alt="${product.name} "width="300px" hight="300px" class="main__item--image item__img" />
         <div class="main__item--text">
           <p class="card__title title">${product.name}</p>
           <h4 class="card__price price">${product.price}</h4>

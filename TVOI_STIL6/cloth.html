@@ -4,6 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TVOI_STIL6</title>
+    <link rel="stylesheet" href="./src/load.css">
+    <link rel="stylesheet" href="./src/style.css" />
+
   </head>
   <body>
     <header class="header">
@@ -54,6 +57,9 @@
       </div>
     </header>
     <main class="main">
+      <div class="loader">
+        <div class="spinner"></div>
+      </div>
       <h1 id="1" class="mm" style="text-align: center">Одежда</h1>
       <div class="container main__container" id="productsContainer"></div>
       <div class="modal" id="myModal">
@@ -157,37 +163,64 @@
       <div class="container">
         <div class="footer__top">
           <div class="footer__logo">
-            <a href="">Logo</a>
+            <a href="">TVOI_STIL6</a>
           </div>
           <div class="footer__faq">
             <h4>ПОДДЕРЖКА</h4>
-            <a href="">Доставка</a>
-            <a href="">Гарантия качества</a>
-            <a href="">Оплата и возврат</a>
+            <a
+              href=""
+              class="header__links__item__btn header__links__item__btn--favorites"
+              >Доставка</a
+            >
+            <a
+              href=""
+              class="header__links__item__btn header__links__item__btn--favorites"
+              >Гарантия качества</a
+            >
+            <a
+              href=""
+              class="header__links__item__btn header__links__item__btn--favorites"
+              >Оплата и возврат</a
+            >
           </div>
           <div class="footer__catalog">
             <h4>КАТАЛОГ</h4>
-            <a href="">Футболки</a>
-            <a href="">Толстовки</a>
-            <a href="">Аксесуары</a>
+            <a
+              href=""
+              class="header__links__item__btn header__links__item__btn--favorites"
+              >Футболки</a
+            >
+            <a
+              href=""
+              class="header__links__item__btn header__links__item__btn--favorites"
+              >Толстовки</a
+            >
+            <a
+              href=""
+              class="header__links__item__btn header__links__item__btn--favorites"
+              >Аксесуары</a
+            >
           </div>
           <div class="footer__socials">
-            <h4>КАТАЛОГ</h4>
-            <a href="">Футболки</a>
-            <a href="">Толстовки</a>
+            <h4>Социальные сети</h4>
+            <a href="">Телегра</a>
+            <a href="">Вк</a>
             <a href="">Аксесуары</a>
           </div>
         </div>
         <div class="footer__bottom">
-          <p>© 2017-2023 Street Republic Все права защищены</p>
-          <p>Политика обработки данных</p>
-          <p>Политика конфиденциальности</p>
+          <div>© 2017-2023 Street Republic Все права защищены</div>
+          <div class="footer__bottom--policy">
+            <p>Политика обработки данных</p>
+            <p>Политика конфиденциальности</p>
+          </div>
         </div>
       </div>
     </footer>
     
     <script type="module" src="main.js"></script>
-    <!-- <script src="./src/js/cart.js"></script>
-    <script src="./src/js/tg_form.js"></script> -->
+    <script type="module" src="./src/js/cart.js"></script>
+    <script type="module" src="./src/js/tg_form.js"></script>
+    <script type="module" src="./src/js/js.js"></script>
   </body>
 </html>
