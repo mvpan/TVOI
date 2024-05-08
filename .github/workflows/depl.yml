@@ -38,11 +38,11 @@ jobs:
           cache-dependency-path: TVOI_STIL6/yarn.lock
       - name: Install dependencies
         run: |
-          cd .\TVOI_STIL6\
-          yarn install 
+          cd TVOI/'TVOI_STIL6'
+          yarn install --frozen-lockfile
       - name: Build
         run: |
-          cd .\TVOI_STIL6\
+          cd TVOI/'TVOI_STIL6'
           yarn build
       - name: Setup Pages
         uses: actions/configure-pages@v4
@@ -50,7 +50,7 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           # Upload dist folder
-          path: './dist'
+          path: TVOI/'TVOI_STIL6'/dist
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
